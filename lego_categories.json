@@ -2,8 +2,8 @@
         "pk": 1,
         "model": "products.category",
         "fields": {
-            "name": "space",
-            "friendly_name": "Space parts"
+            "name": "hospital_parts",
+            "friendly_name": "Hospital parts"
         }
     },
     {
@@ -36,6 +36,54 @@
         "fields": {
             "name": "car_parts",
             "friendly_name": "Car parts"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.category",
+        "fields": {
+            "name": "shields",
+            "friendly_name": "Shield"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.category",
+        "fields": {
+            "name": "hinger",
+            "friendly_name": "Hinger"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.category",
+        "fields": {
+            "name": "blocks",
+            "friendly_name": "Blocks"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.category",
+        "fields": {
+            "name": "space",
+            "friendly_name": "Space"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.category",
+        "fields": {
+            "name": "watergear",
+            "friendly_name": "Watergear"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.category",
+        "fields": {
+            "name": "hair",
+            "friendly_name": "Hair"
         }
     }
 ]
