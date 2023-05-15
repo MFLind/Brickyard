@@ -1,0 +1,41 @@
+[{
+        "pk": 1,
+        "model": "products.category",
+        "fields": {
+            "name": "space",
+            "friendly_name": "Space parts"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.category",
+        "fields": {
+            "name": "animanl_parts",
+            "friendly_name": "Animal parts"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.category",
+        "fields": {
+            "name": "minifigures",
+            "friendly_name": "Minifigures"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.category",
+        "fields": {
+            "name": "headgear",
+            "friendly_name": "Headgear"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.category",
+        "fields": {
+            "name": "car_parts",
+            "friendly_name": "Car parts"
+        }
+    }
+]

@@ -8,68 +8,68 @@
       "price": 53.99,
       "category": ,
       "rating": ,
-      "image_url": "",
-      "image": ""
+      "image_url": "AA/static/assets/images/770p4c_minifig_accessory_shield_ovoid_with_dragon_blue_and_red_pattern.jpg",
+      "image": "BB/770p4c_minifig_accessory_shield_ovoid_with_dragon_blue_and_red_pattern.jpg"
    },
    "pk": 2,
    "model": "products.product",
    "fields": {
-      "sku": "2433",
+      "sku": "2433-005",
       "name": "Hinge bar 2 - with 3 fingers and top stud end control lever yellow",
       "description": "Hinge bar 2 - with 3 fingers and top stud end control lever yellow",
       "price": 53.99,
       "category": ,
       "rating": ,
-      "image_url": "",
-      "image": ""
+      "image_url": "AA/static/assets/images/2433_hinge_bar_2-with_3_fingers_and_top_stud_end_control_lever_yellow.jpg",
+      "image": "BB/2433_hinge_bar_2-with_3_fingers_and_top_stud_end_control_lever_yellow.jpg"
    },
    "pk": 3,
    "model": "products.product",
    "fields": {
-      "sku": "2465",
+      "sku": "2465-003",
       "name": "Brick 1x16 white side",
       "description": "Brick 1x16 white side",
       "price": 53.99,
       "category": ,
       "rating": ,
-      "image_url": "",
-      "image": ""
+      "image_url": "AA/static/assets/images/2465_brick_1x16_white_side.jpg",
+      "image": "BB/2465_brick_1x16_white_side.jpg"
    },
    "pk": 4,
    "model": "products.product",
    "fields": {
-      "sku": "2484c01",
+      "sku": "2484c01-004",
       "name": "Car spring 2x2 wheel holder complete vehicle red",
       "description": "Car spring 2x2 wheel holder complete vehicle red",
       "price": 53.99,
       "category": ,
       "rating": ,
-      "image_url": "",
-      "image": ""
+      "image_url": "AA/static/assets/images/2484c01_car_spring_2x2_wheel_holder_complete_vehicle_red.jpg",
+      "image": "BB/2484c01_car_spring_2x2_wheel_holder_complete_vehicle_red.jpg"
    },
    "pk": 5,
    "model": "products.product",
    "fields": {
-      "sku": "2544",
+      "sku": "2544-002",
       "name": "Minifig hat tricorner headgear pirate tricorne triangle black",
       "description": "Minifig hat tricorner headgear pirate tricorne triangle black",
       "price": 53.99,
       "category": ,
       "rating": ,
-      "image_url": "",
-      "image": ""
+      "image_url": "AA/static/assets/images/2544_minifig_hat_tricorner_headgear_pirate_tricorne_triangle_black.jpg",
+      "image": "BB/2544_minifig_hat_tricorner_headgear_pirate_tricorne_triangle_black.jpg"
    },
    "pk": 6,
    "model": "products.product",
    "fields": {
-      "sku": "2544",
+      "sku": "2544-006",
       "name": "Minifig hat tricorner headgear pirate tricorne triangle oldbrown",
       "description": "Minifig hat tricorner headgear pirate tricorne triangle oldbrown",
       "price": 53.99,
       "category": ,
       "rating": ,
-      "image_url": "",
-      "image": ""
+      "image_url": "AA/static/assets/images/2544_minifig_hat_tricorner_headgear_pirate_tricorne_triangle_oldbrown.jpg",
+      "image": "BB/2544_minifig_hat_tricorner_headgear_pirate_tricorne_triangle_oldbrown.jpg"
    },
    "pk": 7,
    "model": "products.product",
@@ -80,188 +80,188 @@
       "price": 53.99,
       "category": ,
       "rating": ,
-      "image_url": "",
-      "image": ""
+      "image_url": "AA/static/assets/images/3068bp52_tile_2x2_with_red_cross_pattern.jpg",
+      "image": "BB/3068bp52_tile_2x2_with_red_cross_pattern.jpg"
    },
    "pk": 8,
    "model": "products.product",
    "fields": {
-      "sku": "3624",
+      "sku": "3624-002",
       "name": "Minifig headgear hat peaked cap black",
       "description": "Minifig headgear hat peaked cap black side",
       "price": 53.99,
       "category": ,
       "rating": ,
-      "image_url": "",
-      "image": ""
+      "image_url": "AA/static/assets/images/3624_minifig_headgear_hat_peaked_cap_black_side.jpg",
+      "image": "BB/3624_minifig_headgear_hat_peaked_cap_black_side.jpg"
    },
    "pk": 9,
    "model": "products.product",
    "fields": {
-      "sku": "3624",
+      "sku": "3624-001",
       "name": "Minifig headgear hat peaked cap blue",
       "description": "Minifig headgear hat peaked cap blue side",
       "price": 53.99,
       "category": ,
       "rating": ,
-      "image_url": "",
-      "image": ""
+      "image_url": "AA/static/assets/images/3624_minifig_headgear_hat_peaked_cap_blue_side.jpg",
+      "image": "BB/3624_minifig_headgear_hat_peaked_cap_blue_side.jpg"
    },
    "pk": 10,
    "model": "products.product",
    "fields": {
-      "sku": "3624",
+      "sku": "3624-004",
       "name": "Minifig headgear hat peaked cap red",
       "description": "Minifig headgear hat peaked cap red side",
       "price": 53.99,
       "category": ,
       "rating": ,
-      "image_url": "",
-      "image": ""
+      "image_url": "AA/static/assets/images/3624_minifig_headgear_hat_peaked_cap_red_side.jpg",
+      "image": "BB/3624_minifig_headgear_hat_peaked_cap_red_side.jpg"
    },
    "pk": 11,
    "model": "products.product",
    "fields": {
-      "sku": "3624",
+      "sku": "3624-003",
       "name": "Minifig headgear hat peaked cap white",
       "description": "Minifig headgear hat peaked cap white side",
       "price": 53.99,
       "category": ,
       "rating": ,
-      "image_url": "",
-      "image": ""
+      "image_url": "AA/static/assets/images/3624_minifig_headgear_hat_peaked_cap_white_side.jpg",
+      "image": "BB/3624_minifig_headgear_hat_peaked_cap_white_side.jpg"
    },
    "pk": 12,
    "model": "products.product",
    "fields": {
-      "sku": "3629",
+      "sku": "3629-002",
       "name": "Minifig hat cowboy headgear black",
       "description": "Minifig hat cowboy headgear black",
       "price": 53.99,
       "category": ,
       "rating": ,
-      "image_url": "",
-      "image": ""
+      "image_url": "AA/static/assets/images/3629_minifig_hat_cowboy_headgear_black.jpg",
+      "image": "BB/3629_minifig_hat_cowboy_headgear_black.jpg"
    },
    "pk": 13,
    "model": "products.product",
    "fields": {
-      "sku": "3844",
+      "sku": "3844-002",
       "name": "Minifig headgear helment castle with neck protector black",
       "description": "Minifig headgear helment castle with neck protector black",
       "price": 53.99,
       "category": ,
       "rating": ,
-      "image_url": "",
-      "image": ""
+      "image_url": "AA/static/assets/images/3844_minifig_headgear_helment_castle_with_neck_protector_black.jpg",
+      "image": "BB/3844_minifig_headgear_helment_castle_with_neck_protector_black.jpg"
    },
    "pk": 14,
    "model": "products.product",
    "fields": {
-      "sku": "3844",
+      "sku": "3844-007",
       "name": "Minifig headgear helmet castle with neck protector olddkgray",
       "description": "Minifig headgear helmet castle with neck protector olddkgray",
       "price": 53.99,
       "category": ,
       "rating": ,
-      "image_url": "",
-      "image": ""
+      "image_url": "AA/static/assets/images/3844_minifig_headgear_helmet_castle_with_neck_protector_olddkgray.jpg",
+      "image": "BB/3844_minifig_headgear_helmet_castle_with_neck_protector_olddkgray.jpg"
    },
    "pk": 15,
    "model": "products.product",
    "fields": {
-      "sku": "4213",
+      "sku": "4213-002",
       "name": "Hinge car vehicle roof plate specialty 4x4 black",
       "description": "Hinge car vehicle roof plate specialty 4x4 black",
       "price": 53.99,
       "category": ,
       "rating": ,
-      "image_url": "",
-      "image": ""
+      "image_url": "AA/static/assets/images/4213_hinge_car_vehicle_roof_plate_specialty_4x4_black.jpg",
+      "image": "BB/4213_hinge_car_vehicle_roof_plate_specialty_4x4_black.jpg"
    },
    "pk": 16,
    "model": "products.product",
    "fields": {
-      "sku": "4214",
+      "sku": "4214-002",
       "name": "Hinge car roof holder 1x4x2 vehicle black",
       "description": "Hinge car roof holder 1x4x2 vehicle black",
       "price": 53.99,
       "category": ,
       "rating": ,
-      "image_url": "",
-      "image": ""
+      "image_url": "AA/static/assets/images/4214_hinge_car_roof_holder_1x4x2_vehicle_black.jpg",
+      "image": "BB/4214_hinge_car_roof_holder_1x4x2_vehicle_black.jpg"
    },
    "pk": 17,
    "model": "products.product",
    "fields": {
-      "sku": "4275a",
+      "sku": "4275a-004",
       "name": "Hinge plate 1x2 with 3 fingers and solid studs red",
       "description": "Hinge plate 1x2 with 3 fingers and solid studs red",
       "price": 53.99,
       "category": ,
       "rating": ,
-      "image_url": "",
-      "image": ""
+      "image_url": "AA/static/assets/images/4275a_hinge_plate_1x2_with_3_fingers_and_solid_studs_red.jpg",
+      "image": "BB/4275a_hinge_plate_1x2_with_3_fingers_and_solid_studs_red.jpg"
    },
    "pk": 18,
    "model": "products.product",
    "fields": {
-      "sku": "4276a",
+      "sku": "4276a-004",
       "name": "Hinge plate 1x2 with 2 fingers and solid studs red",
       "description": "Hinge plate 1x2 with 2 fingers and solid studs red",
       "price": 53.99,
       "category": ,
       "rating": ,
-      "image_url": "",
-      "image": ""
+      "image_url": "AA/static/assets/images/4276a_hinge_plate_1x2_with_2_fingers_and_solid_studs_red.jpg",
+      "image": "BB/4276a_hinge_plate_1x2_with_2_fingers_and_solid_studs_red.jpg"
    },
    "pk": 19,
    "model": "products.product",
    "fields": {
-      "sku": "4505",
+      "sku": "4505-001",
       "name": "Hinge plate 1x6 with 2 and 3 fingers on sides",
       "description": "Hinge plate 1x6 with 2 and 3 fingers on sides",
       "price": 53.99,
       "category": ,
       "rating": ,
-      "image_url": "",
-      "image": ""
+      "image_url": "AA/static/assets/images/4505_hinge_plate_1x6_with_2_and_3_fingers_on_sides.jpg",
+      "image": "BB/4505_hinge_plate_1x6_with_2_and_3_fingers_on_sides.jpg"
    },
    "pk": 20,
    "model": "products.product",
    "fields": {
-      "sku": "4587",
+      "sku": "4587-004",
       "name": "Animal horse hitching with hinge red",
       "description": "Animal horse hitching with hinge red",
       "price": 53.99,
       "category": ,
       "rating": ,
-      "image_url": "",
-      "image": ""
+      "image_url": "AA/static/assets/images/4587_animal_horse_hitching_with_hinge_red.jpg",
+      "image": "BB/4587_animal_horse_hitching_with_hinge_red.jpg"
    },
    "pk": 21,
    "model": "products.product",
    "fields": {
-      "sku": "4598",
+      "sku": "4598-007",
       "name": "Plate 2x3 2x2 bracket modified space seat oldgray",
       "description": "Plate 2x3 2x2 bracket modified space seat oldgray",
       "price": 53.99,
       "category": ,
       "rating": ,
-      "image_url": "",
-      "image": ""
+      "image_url": "AA/static/assets/images/4598_plate_2x3_2x2_bracket_modified_space_seat_oldgray.jpg",
+      "image": "BB/4598_plate_2x3_2x2_bracket_modified_space_seat_oldgray.jpg"
    },
    "pk": 22,
    "model": "products.product",
    "fields": {
-      "sku": "30092",
+      "sku": "30092-005",
       "name": "Minifig underwater scooter utensil yellow",
       "description": "Minifig underwater scooter utensil yellow",
       "price": 53.99,
       "category": ,
       "rating": ,
-      "image_url": "",
-      "image": ""
+      "image_url": "AA/static/assets/images/30092_minifig_underwater_scooter_utensil_yellow.jpg",
+      "image": "BB/30092_minifig_underwater_scooter_utensil_yellow.jpg"
    },
    "pk": 23,
    "model": "products.product",
@@ -272,8 +272,8 @@
       "price": 53.99,
       "category": ,
       "rating": ,
-      "image_url": "",
-      "image": ""
+      "image_url": "AA/static/assets/images/lego_6508_wave_racer.jpg",
+      "image": "BB/lego_6508_wave_racer.jpg"
    },
    "pk": 24,
    "model": "products.product",
@@ -284,8 +284,8 @@
       "price": 53.99,
       "category": ,
       "rating": ,
-      "image_url": "",
-      "image": ""
+      "image_url": "AA/static/assets/images/old022_legoland_old_type_blue_torso_blue_legs_red_pigtails_hair,jpg",
+      "image": "BB/old022_legoland_old_type_blue_torso_blue_legs_red_pigtails_hair.jpg"
    },
    "pk": 25,
    "model": "products.product",
@@ -296,8 +296,8 @@
       "price": 53.99,
       "category": ,
       "rating": ,
-      "image_url": "",
-      "image": ""
+      "image_url": "AA/static/assets/images/old046s_legoland_old_type_white_torso_white_legs_black_pigtails_hair_red.jpg",
+      "image": "BB/old046s_legoland_old_type_white_torso_white_legs_black_pigtails_hair_red.jpg"
    },
    "pk": 26,
    "model": "products.product",
@@ -308,43 +308,43 @@
       "price": 53.99,
       "category": ,
       "rating": ,
-      "image_url": "",
-      "image": ""
+      "image_url": "AA/static/assets/images/old047s_legoland_old_type_white_torso_white_legs_white_hat_red_cross.jpg",
+      "image": "BB/old047s_legoland_old_type_white_torso_white_legs_white_hat_red_cross.jpg"
    },
    "pk": 27,
    "model": "products.product",
    "fields": {
-      "sku": "x79",
+      "sku": "x79-007",
       "name": "Minifig headgear hood farmers cowl oldbrown front",
       "description": "Minifig headgear hood farmers cowl oldbrown front",
       "price": 53.99,
       "category": ,
       "rating": ,
-      "image_url": "",
-      "image": ""
+      "image_url": "AA/static/assets/images/x79_minifig_headgear_hood_farmers_cowl_oldbrown_front.jpg",
+      "image": "BB/x79_minifig_headgear_hood_farmers_cowl_oldbrown_front.jpg"
    },
    "pk": 28,
    "model": "products.product",
    "fields": {
-      "sku": "x103",
+      "sku": "x103-004",
       "name": "Minifig hair female whith pigtails headger",
       "description": "Minifig hair female whith pigtails headger",
       "price": 53.99,
       "category": ,
       "rating": ,
-      "image_url": "",
-      "image": ""
+      "image_url": "AA/static/assets/images/x103_minifig_hair_female_whith_pigtails_headger.jpg",
+      "image": "BB/x103_minifig_hair_female_whith_pigtails_headger.jpg"
    },
    "pk": 29,
    "model": "products.product",
    "fields": {
-      "sku": "x103",
+      "sku": "x103-002",
       "name": "Minifig hair female with pigtails headgear black",
       "description": "Minifig hair female with pigtails headgear black",
       "price": 53.99,
       "category": ,
       "rating": ,
-      "image_url": "",
-      "image": ""
+      "image_url": "AA/static/assets/images/x103_minifig_hair_female_with_pigtails_headgear_black.jpg",
+      "image": "BB/x103_minifig_hair_female_with_pigtails_headgear_black.jpg"
    }
 }, ]
