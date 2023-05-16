@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+{% load django_bootstrap5 %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+{% load static %}
+<html lang="{{ LANGUAGE_CODE|default:'en_us' }}">
+
+
+{% load django_bootstrap5 %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Swedish Home-Style Cooking</title>
+    <meta name="description" content="Swedish Home-Style Cooking Restaurant">
+    <meta name="author" content="Madeleine Frithiof-Lindergren">
+    <meta property="og:title" content="Swedish Home-Style Cooking Restaurant">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.swecooking.org">
+    <meta property="og:description" content="Swedish Home-Style Cooking Restaurant">
+    <meta property="og:image" content="{% static 'assets/images/image.png' %}">
+    <link rel="icon" href="{% static 'assets/images/favicon.ico' %}">
+    <link rel="apple-touch-icon" href="{% static 'assets/images/apple-touch-icon.png' %}">
+
+    <!-- jquery -->
+    <script src="{% static 'js/jquery-3.6.3.min.js' %}"></script>
+
+    <!-- Bootstrap CSS -->
+    {% bootstrap_css %}
+
+    <!-- Bootstrap JavaScript if it is in head -->
+    {% if 'javascript_in_head'|bootstrap_setting %}
+    {% bootstrap_javascript %}
+    {% endif %}
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+
+<body>
+
+    <section id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark" role="navigation">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar"
+                    aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'assets/images/swe_logo.png' %}"
+                        class="img-fuild" style="max-width: 40%; background-color: antiquewhite;"></a>
+                <div class="collapse navbar-collapse" id="main-navbar">
+                    <ul class="navbar-nav mr-auto navbar-center">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{% url 'home' %}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'home' %}">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'home' %}">Booking</a>
+                        </li>
+                        {% if user.is_authenticated %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'home' %}">Reservations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'home' %}">Logout</a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <script>
+        setTimeout(function () {
+            if ($('#msg').length > 0) {
+                $('#msg').remove();
+            }
+        }, 2000)
+    </script>
+
+
+    <section id="main">
+        {% block content %}
+        {% endblock content %}
+    </section>
+
+    {% if messages %}
+    <div class="container">
+        <div class="card mt-5 ml-3 ">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        {% for message in messages %}
+                        <div class="alert alert-{{ message.tags }}" id="msg" role="alert">
+                            <p>{{ message }}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <footer>
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+            <p><i class="fas fa-home me-3 text-secondary"></i>Tegelängsgatan 10, Norrköping, Sweden</p>
+            <p>
+                <i class="fas fa-envelope me-3 text-secondary"></i>
+                info@SwedishHomeStyleCooking.se
+            </p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i>Telephone: +46 123 6433854</p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i>Open hours: 17:00 - 00:00</p>
+
+            © 2023 Copyright:
+            <a class="text-reset fw-bold" href="https://SwedishHomeStyleCooking.se">Swedish Home-Style Cooking</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

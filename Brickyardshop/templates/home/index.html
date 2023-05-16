@@ -1,28 +1,36 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 {% load static %}
-
-{% block page_header %}
-<div class="container header-container">
-    <div class="row">
-        <div class="col"></div>
-    </div>
-</div>
-{% endblock %}
-
 {% block content %}
-<div class="container h-100">
-    <div class="row h-100">
-        <div class="col-7 col-md-6 my-auto">
-            <h1 class="display-4 logo-font text-block">
-                The new collections are here
-            </h1>
-            <div class="my-5">
-                <h4>
-                    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop
-                        Now</a>
-                </h4>
-            </div>
+{% csrf_token %}
+
+<div class="container opacity-75">
+    <div class="card mt-5 ml-3 ">
+        <div class="card-body">
+            <h2 class="fs-2">Welcome to Swedish Home-Style Cooking</h2>
+
+            <p class="fs-4">
+                A cozy and authentic Swedish eatery. We believe in serving traditional and
+                home-style Swedish cuisine, made with only the freshest and highest quality
+                ingredients.
+            </p>
+            <p class="fs-4">
+                Our menu is inspired by classic Swedish dishes that have been passed down from generation to generation.
+                From
+                the
+                hearty and filling meatballs with mashed potatoes and lingonberry sauce, to the light and fresh gravad
+                lax
+                (cured
+                salmon) with crisp bread and mustard sauce, there is something for everyone at our restaurant.
+            </p>
+            <p class="fs-4">
+                Come and join us for a taste of Sweden. Whether you're looking for a romantic dinner for two, a family
+                gathering,
+                or a group celebration, our warm and friendly atmosphere will make you feel right at home.
+            </p>
+            <p class="fs-4">
+                We look forward to serving you soon!
+            </p>
         </div>
     </div>
 </div>
-{% endblock %}
+{% endblock content %}
