@@ -1,0 +1,67 @@
+{% extends 'base.html' %} {% load static %} {% block content %} {% csrf_token %}
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <img
+          src="{% static 'assets/images/770p4c_minifig_accessory_shield_ovoid_with_dragon_blue_and_red_pattern.jpg' %}"
+          class="card-img-top"
+          alt="lego"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This card has even longer content than the
+            first to show that equal height action.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img
+          src="{% static 'assets/images/4275a_hinge_plate_1x2_with_3_fingers_and_solid_studs_red.jpg' %}"
+          class="card-img-top"
+          alt="lego"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This card has even longer content than the
+            first to show that equal height action.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img
+          src="{% static 'assets/images/old046s_legoland_old_type_white_torso_white_legs_black_pigtails_hair_red.jpg' %}"
+          class="card-img-top"
+          alt="lego"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This card has even longer content than the
+            first to show that equal height action.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

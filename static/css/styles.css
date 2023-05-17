@@ -18,7 +18,7 @@
 }
 
 .navbar-brand {
-    color: #fff !important;
+    color: #000 !important;
     text-transform: uppercase;
     font-size: 3em;
     font-weight: bold;
@@ -31,7 +31,7 @@
 }
 
 .nav-link {
-    color: #fff !important;
+    color: #000 !important;
     font-size: 1em;
     font-weight: 700;
 }
@@ -44,7 +44,6 @@
 
 #main {
     position: relative;
-    background: url('/static/assets/images/pexels_chan_walrus_941861_1.png');
     min-height: 100vh;
     background-size: cover;
     background-position: center;

@@ -11,13 +11,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Swedish Home-Style Cooking</title>
-    <meta name="description" content="Swedish Home-Style Cooking Restaurant">
+    <title>BrickYard</title>
+    <meta name="description" content="BrickYard">
     <meta name="author" content="Madeleine Frithiof-Lindergren">
-    <meta property="og:title" content="Swedish Home-Style Cooking Restaurant">
+    <meta property="og:title" content="BrickYard">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.swecooking.org">
-    <meta property="og:description" content="Swedish Home-Style Cooking Restaurant">
+    <meta property="og:url" content="https://www.brickyard.com">
+    <meta property="og:description" content="BrickYard">
     <meta property="og:image" content="{% static 'assets/images/image.png' %}">
     <link rel="icon" href="{% static 'assets/images/favicon.ico' %}">
     <link rel="apple-touch-icon" href="{% static 'assets/images/apple-touch-icon.png' %}">
@@ -46,27 +46,29 @@
                     aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'assets/images/swe_logo.png' %}"
-                        class="img-fuild" style="max-width: 40%; background-color: antiquewhite;"></a>
+                <a class="navbar-brand" href="{% url 'home' %}"><img
+                        src="{% static 'assets/images/brickyard_logo.png' %}" class="img-fuild"
+                        style="max-width: 40%; background-color: antiquewhite;"></a>
                 <div class="collapse navbar-collapse" id="main-navbar">
                     <ul class="navbar-nav mr-auto navbar-center">
                         <li class="nav-item active">
                             <a class="nav-link" href="{% url 'home' %}">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'home' %}">Menu</a>
+                            <a class="nav-link" href="{% url 'webshop' %}">Butiken</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'home' %}">Booking</a>
-                        </li>
-                        {% if user.is_authenticated %}
-                        <li class="nav-item">
-                            <a class="nav-link" href="{% url 'home' %}">Reservations</a>
+                            <a class="nav-link" href="{% url 'gallery' %}">Galleri</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'home' %}">Logout</a>
+                            <a class="nav-link" href="{% url 'contact' %}">Kontakt</a>
                         </li>
-                        {% endif %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'aboutus' %}">Om Oss</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'home' %}">Din varukorg är tom</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -110,13 +112,13 @@
             <p><i class="fas fa-home me-3 text-secondary"></i>Tegelängsgatan 10, Norrköping, Sweden</p>
             <p>
                 <i class="fas fa-envelope me-3 text-secondary"></i>
-                info@SwedishHomeStyleCooking.se
+                info@brickyard.com
             </p>
             <p><i class="fas fa-phone me-3 text-secondary"></i>Telephone: +46 123 6433854</p>
             <p><i class="fas fa-phone me-3 text-secondary"></i>Open hours: 17:00 - 00:00</p>
 
             © 2023 Copyright:
-            <a class="text-reset fw-bold" href="https://SwedishHomeStyleCooking.se">Swedish Home-Style Cooking</a>
+            <a class="text-reset fw-bold" href="https://brickyard.com">BrickYard</a>
         </div>
     </footer>
 

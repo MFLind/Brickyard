@@ -1,0 +1,110 @@
+{% extends 'base.html' %} {% load static %} {% block content %} {% csrf_token %}
+
+<div class="container-fluid">
+  <div class="row flex-nowrap">
+    <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0">
+      <div
+        class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100"
+      >
+        <a
+          href="/"
+          class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+        >
+          <span class="fs-5 d-none d-sm-inline">Category</span>
+        </a>
+        <li>
+          <a href="#" class="nav-link px-0 align-middle">
+            <i class="fs-4 bi-table"></i>
+            <span class="ms-1 d-none d-sm-inline">Hospital parts</span></a
+          >
+        </li>
+        <li>
+          <a href="#" class="nav-link px-0 align-middle">
+            <i class="fs-4 bi-table"></i>
+            <span class="ms-1 d-none d-sm-inline">Animal parts</span></a
+          >
+        </li>
+        <li>
+          <a href="#" class="nav-link px-0 align-middle">
+            <i class="fs-4 bi-table"></i>
+            <span class="ms-1 d-none d-sm-inline">Minifigures</span></a
+          >
+        </li>
+        <li>
+          <a href="#" class="nav-link px-0 align-middle">
+            <i class="fs-4 bi-table"></i>
+            <span class="ms-1 d-none d-sm-inline">Headgear</span></a
+          >
+        </li>
+      </div>
+    </div>
+    <div class="col py-3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <img
+                src="{% static 'assets/images/770p4c_minifig_accessory_shield_ovoid_with_dragon_blue_and_red_pattern.jpg' %}"
+                class="card-img-top"
+                alt="lego"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This card has even longer
+                  content than the first to show that equal height action.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="{% static 'assets/images/4275a_hinge_plate_1x2_with_3_fingers_and_solid_studs_red.jpg' %}"
+                class="card-img-top"
+                alt="lego"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This card has even longer
+                  content than the first to show that equal height action.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="{% static 'assets/images/old046s_legoland_old_type_white_torso_white_legs_black_pigtails_hair_red.jpg' %}"
+                class="card-img-top"
+                alt="lego"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This card has even longer
+                  content than the first to show that equal height action.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
