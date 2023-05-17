@@ -50,3 +50,14 @@
     padding: 280px 0 220px;
 
 }
+
+/* Home page images and text box */
+.lego_pile {
+    float: right;
+    height: 50%;
+    width: auto;
+}
+
+.information {
+    float: left;
+}
