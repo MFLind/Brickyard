@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.http import HttpResponse, JsonResponse
+from products.models import Category, Product
 
 # Create your views here.
 
@@ -12,7 +14,11 @@ def index(request):
 def webshop(request):
     """A view to return the webshop page"""
 
-    return render(request, "home/webshop.html")
+    context = {
+        "categories": Category.objects.filter().order_by("friendly_name"),
+        "products": Product.objects.filter(category=0).order_by("name"),
+    }
+    return render(request, "home/webshop.html", context)
 
 
 def contact(request):
