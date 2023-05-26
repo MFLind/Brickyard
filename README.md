@@ -28,9 +28,11 @@ During the project UX design where done in Figma as tool for concept and prototy
 Example of pages from UX design:
 
 <img width="901" alt="image" src="https://github.com/MFLind/Brickyard/assets/106115510/5498ab2f-cecd-4f61-9d40-c1bba848f0e0">
+
 This is the home page.
 
 <img width="787" alt="image" src="https://github.com/MFLind/Brickyard/assets/106115510/22cb8852-7c48-4b76-b99c-afc586525eb4">
+
 This is the shop page.
 
 <img width="762" alt="image" src="https://github.com/MFLind/Brickyard/assets/106115510/e6370e7d-25d0-4ec3-b69c-ae13578473f9">
