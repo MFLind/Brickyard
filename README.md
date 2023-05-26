@@ -6,6 +6,21 @@ At BrickYard, we are passionate about LEGO and dedicated to bringing you a wide 
 
 BrickYard is actually starting up as a new company using my platform that is created in this project.
 
+As part of the project I have defined a model for article number (SKU), Lego already today have their numbers, but they doesn't take in acount the color of bricks.
+
+The definition is: articleno = [number]-[color]
+| color number | Color |
+|--- | --- |
+| 001 | Blue |
+| 002 | Black |
+| 003 | White |
+| 004 | Red |
+| 005 | Yellow | 
+| 006 | Brown |
+| 007 | Gray |
+
+
+
 # UX design
 During the project UX design where done in Figma as tool for concept and prototyping. 
 Example of pages from UX design:
