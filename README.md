@@ -2,9 +2,39 @@
 
 BrickYard is the webshop for collectable Lego bricks and pieces.
 
+At BrickYard, we are passionate about LEGO and dedicated to bringing you a wide range of LEGO pieces to enhance your building adventures. Whether you're a seasoned LEGO enthusiast or just starting your brick collection, we have something for everyone.
+
+BrickYard is actually starting up as a new company using my platform that is created in this project.
+
+As part of the project I have defined a model for article number (SKU), Lego already today have their numbers, but they doesn't take in acount the color of bricks.
+
+The definition is: articleno = [number]-[color]
+Example: 451511-002 White Lego Pieces
+
+| color number | Color |
+|--- | --- |
+| 001 | Blue |
+| 002 | Black |
+| 003 | White |
+| 004 | Red |
+| 005 | Yellow | 
+| 006 | Brown |
+| 007 | Gray |
+
+
+
+# UX design
+During the project UX design where done in Figma as tool for concept and prototyping. 
+Example of pages from UX design:
+
+<Insert screenshots from Figma pages>
 
 # Differant view on the website.
-Here is pictures to come
+From the UX design work I create by hand all the webpages in product (from experience the export functions in Figma isn't perfect, also got information about that from expert UX designer that my employer is using for their products).
+
+The resulting real pages in BrickYard (www.brickyard.com):
+
+<Insert screenshots from real production page>
 
 # Features
 - abc
