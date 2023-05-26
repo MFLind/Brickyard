@@ -3,28 +3,34 @@
 {% block content %}
 {% csrf_token %}
 
-<div class="row">
-    <div class="col">
-        <div class="card">
-            <div class="card-body">
-                <h2 class="fs-2">BrickYard</h2>
-
-                <p class="fs-4">
-                    If you like nostalgic Lego sets and projects. But you are missing final pieces, we know that can hunt
-you and keps awake dark nights.
-
-We on BrickYard offer you just those hard to find but also collectable pieces.
-
-Everyone loves all characters of minifigs and Lego creatures, we might have ones you havn't seen before
-or you are missing.
-
-Welcome in to our BrickYard we just love Lego.
-                </p>
+<div class="container-fluid  mx-auto">
+    <div class="row">
+        <div class="col">
+            <div class="card" style="width: 24em; background-color: rgba(154, 170, 255, 1);">
+                <div class="card-body">
+                    <h5 class="card-title">Welcome to BrickYard!</h5>
+                    <p class="card-text">
+                        At BrickYard, we are passionate about LEGO and dedicated to bringing
+                        you a wide range of LEGO pieces to enhance your building adventures.
+                        Whether you're a seasoned LEGO enthusiast or
+                        just starting your brick collection, we have something for everyone.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 24em; background-color: rgba(154, 170, 255, 1);">
+                <div class="card-body">
+                    <h5 class="card-title">Contact Us</h5>
+                    <p class="card-text">
+                        <a class="text-reset fw-bold" href="info@brickyard.com">info@brickyard.com</a><br>
+                        Telephone: +46 123 6433854<br>
+                        <a class="text-reset fw-bold" href="https://brickyard.com">BrickYard</a>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-    <div class="col">
-        <img src="{% static 'assets/images/lego_pile.jpg' %}" alt="lego_pile" />
-    </div>
 </div>
+
 {% endblock content %}
