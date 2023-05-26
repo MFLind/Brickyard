@@ -3,30 +3,34 @@
 {% block content %}
 {% csrf_token %}
 
-<div class="lego_pile">
-    <img src="{% static 'assets/images/lego_pile.jpg' %}" alt="lego_pile" />
-</div>
-
-<div class="container opacity-75 information">
-    <div class="card mt-5 ml-3 ">
-        <div class="card-body">
-            <h2 class="fs-2">BrickYard</h2>
-
-            <p class="fs-4">
-                If you like nostalgic Lego sets and projects. But you are missing final pieces, we know that can hunt
-                you and keps awake dark nights.
-            </p>
-            <p class="fs-4">
-                We on BrickYard offer you just those hard to find but also collectable pieces.
-            </p>
-            <p class="fs-4">
-                Everyone loves all characters of minifigs and Lego creatures, we might have ones you havn't seen before
-                or you are missing.
-            </p>
-            <p class="fs-4">
-                Welcome in to our BrickYard we just love Lego.
-            </p>
+<div class="container-fluid  mx-auto">
+    <div class="row">
+        <div class="col">
+            <div class="card" style="width: 24em; background-color: rgba(154, 170, 255, 1);">
+                <div class="card-body">
+                    <h5 class="card-title">BrickYard</h5>
+                    <p class="card-text">
+                        If you like nostalgic Lego sets and projects. But you are missing final pieces, we know that can
+                        hunt you and keps awake dark nights.
+                    </p>
+                    <p class="card-text">
+                        We on BrickYard offer you just those hard to find but also collectable pieces.
+                    </p>
+                    <p class="card-text">
+                        Everyone loves all characters of minifigs and Lego creatures, we might have ones you havn't seen
+                        before or you are missing.
+                    </p>
+                    <p class="card-text">
+                        Welcome in to our BrickYard we just love Lego.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <img class="img-fuild" src="{% static 'assets/images/lego_pile.jpg' %}" alt="lego_pile"
+                style="max-width: 50%;" />
         </div>
     </div>
 </div>
+
 {% endblock content %}

@@ -40,7 +40,8 @@
 <body>
 
     <section id="header">
-        <nav class="navbar navbar-expand-lg navbar-dark" role="navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark" role="navigation"
+            style="background-color: rgba(255, 229, 0, 0.72); ">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar"
                     aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +49,7 @@
                 </button>
                 <a class="navbar-brand" href="{% url 'home' %}"><img
                         src="{% static 'assets/images/brickyard_logo.png' %}" class="img-fuild"
-                        style="max-width: 40%; background-color: antiquewhite;"></a>
+                        style="max-width: 40%;"></a>
                 <div class="collapse navbar-collapse" id="main-navbar">
                     <ul class="navbar-nav mr-auto navbar-center">
                         <li class="nav-item active">
@@ -58,16 +59,13 @@
                             <a class="nav-link" href="{% url 'webshop' %}">Shop</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'gallery' %}">Galleri</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{% url 'aboutus' %}">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'home' %}">Din varukorg är tom</a>
+                            <a class="nav-link" href="{% url 'home' %}">Shopping Cart</a>
                         </li>
                     </ul>
                 </div>
@@ -75,50 +73,19 @@
         </nav>
     </section>
 
-    <script>
-        setTimeout(function () {
-            if ($('#msg').length > 0) {
-                $('#msg').remove();
-            }
-        }, 2000)
-    </script>
-
-
     <section id="main">
         {% block content %}
         {% endblock content %}
     </section>
 
-    {% if messages %}
-    <div class="container">
-        <div class="card mt-5 ml-3 ">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-sm-6 col-sm-offset-3">
-                        {% for message in messages %}
-                        <div class="alert alert-{{ message.tags }}" id="msg" role="alert">
-                            <p>{{ message }}</p>
-                        </div>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    {% endif %}
 
     <footer>
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
-            <p><i class="fas fa-home me-3 text-secondary"></i>Tegelängsgatan 10, Norrköping, Sweden</p>
-            <p>
-                <i class="fas fa-envelope me-3 text-secondary"></i>
-                info@brickyard.com
-            </p>
-            <p><i class="fas fa-phone me-3 text-secondary"></i>Telephone: +46 123 6433854</p>
-            <p><i class="fas fa-phone me-3 text-secondary"></i>Open hours: 17:00 - 00:00</p>
-
+        <div class="text-center" style="background-color: rgba(248, 60, 60, 1);">
+            Tegelängsgatan 10, Norrköping, Sweden <br>
+            <a class="text-reset fw-bold" href="info@brickyard.com">info@brickyard.com</a><br>
+            Telephone: +46 123 6433854<br>
             © 2023 Copyright:
-            <a class="text-reset fw-bold" href="https://brickyard.com">BrickYard</a>
+            <a class="text-reset fw-bold" href="https://brickyard.com">BrickYard</a></p>
         </div>
     </footer>
 

@@ -3,12 +3,28 @@
 {% block content %}
 {% csrf_token %}
 
-<div class="container opacity-75">
-    <div class="card mt-5 ml-3 ">
-        <div class="card-body">
-            <h2 class="fs-2">Welcome to Swedish Home-Style Cooking</h2>
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="fs-2">BrickYard</h2>
 
+                <p class="fs-4">
+                    If you like nostalgic Lego sets and projects. But you are missing final pieces, we know that can hunt
+you and keps awake dark nights.
+
+We on BrickYard offer you just those hard to find but also collectable pieces.
+
+Everyone loves all characters of minifigs and Lego creatures, we might have ones you havn't seen before
+or you are missing.
+
+Welcome in to our BrickYard we just love Lego.
+                </p>
+            </div>
         </div>
+    </div>
+    <div class="col">
+        <img src="{% static 'assets/images/lego_pile.jpg' %}" alt="lego_pile" />
     </div>
 </div>
 {% endblock content %}
