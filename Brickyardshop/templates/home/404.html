@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% csrf_token %}
+
+<div class="container-fluid  mx-auto" style="background-color: rgba(248, 60, 60, 1);">
+    <div class="row">
+        <div class="col">
+            <div class="card" style="width: 24em; background-color: rgba(154, 170, 255, 1);">
+                <div class="card-body">
+                    <h5 class="card-title">404: The page was not found</h5>
+                    <p class="card-text">
+                        Oh no! The boat Crashed in to your computer.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <img class="img-fluid" src="{% static 'assets/images/IMG_4137.jpeg' %}" alt="lego_boat"
+                style="max-width: 50%;" />
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
