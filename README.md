@@ -54,7 +54,7 @@ This is the page that comes up when you have a 404 error.
 # Differant view on the website.
 From the UX design work I create by hand all the webpages in product (from experience the export functions in Figma isn't perfect, also got information about that from expert UX designer that my employer is using for their products).
 
-The resulting real pages in BrickYard (www.brickyard.com):
+The resulting real pages in BrickYard (www.brickyard.se):
 
 <Insert screenshots from real production page>
 
