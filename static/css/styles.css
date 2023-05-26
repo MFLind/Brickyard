@@ -1,5 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&family=Lato:wght@300&family=Oswald:wght@200;400&display=swap');
 
-* {
-    font-family: 'Lato', sans-serif;
+html {
+    height: 100%;
+}
+
+body {
+    height: calc(100vh - 164px);
+    color: #555;
+    font-family: 'Lato';
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
 }
