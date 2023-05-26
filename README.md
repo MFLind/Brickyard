@@ -36,15 +36,19 @@ This is the home page.
 This is the shop page.
 
 <img width="762" alt="image" src="https://github.com/MFLind/Brickyard/assets/106115510/e6370e7d-25d0-4ec3-b69c-ae13578473f9">
+
 This is the item deatel page where you can read more about every item when you have clickt on it.
 
 <img width="762" alt="image" src="https://github.com/MFLind/Brickyard/assets/106115510/1e843b6d-573a-45c2-804b-964080d1e660">
+
 This is the about us page and on this page you have the information to contact us with.
 
 <img width="853" alt="image" src="https://github.com/MFLind/Brickyard/assets/106115510/a63a65b5-c2a1-46c0-86da-131f84838dd3">
+
 This is the checkout page. This page are mising som staf on the ux disign. 
 
 <img width="773" alt="image" src="https://github.com/MFLind/Brickyard/assets/106115510/9eb267eb-4562-4521-b3fa-f55fdc3708a7">
+
 This is the page that comes up when you have a 404 error.
 
 # Differant view on the website.
