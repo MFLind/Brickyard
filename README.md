@@ -9,6 +9,8 @@ BrickYard is actually starting up as a new company using my platform that is cre
 As part of the project I have defined a model for article number (SKU), Lego already today have their numbers, but they doesn't take in acount the color of bricks.
 
 The definition is: articleno = [number]-[color]
+Example: 451511-002 White Lego Pieces
+
 | color number | Color |
 |--- | --- |
 | 001 | Blue |
