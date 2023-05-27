@@ -65,6 +65,7 @@ INSTALLED_APPS = [
     "profiles",
     # Other
     "crispy_forms",
+    'crispy_bootstrap5'
 ]
 
 MIDDLEWARE = [
@@ -80,7 +81,8 @@ MIDDLEWARE = [
 ROOT_URLCONF = "Brickyard.urls"
 
 
-CRISPY_TEMPLTE_PACK = "bootstrap5"
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 CSRF_TRUSTED_ORIGINS = [
     "https://appname.herokuapp.com",
