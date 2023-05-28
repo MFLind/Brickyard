@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/accounts/signup/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/accounts/login/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/basket/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/?sort=price&amp;direction=asc</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/?sort=category&amp;direction=asc</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/?category=hospital_parts</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/?category=animanl_parts</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/?category=minifigures</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/?category=hospital_parts,animanl_parts,minifigures,headgear,car_parts,shields,hinger,blocks,space,watergear,hair</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/?category=new_arrivals</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/?category=deals</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/?category=clearance</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/?category=new_arrivals,deals,clearance</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/aboutus</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/accounts/password/reset/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/3/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/?category=blocks</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/6/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/?category=headgear</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/8/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/9/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/10/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/11/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/21/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/?category=space</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/15/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/?category=car_parts</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/17/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/?category=hinger</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/18/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/5/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/19/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/27/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/?category=hair</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/28/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/13/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/7/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/12/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/20/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/26/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/2/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/16/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/22/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/?category=watergear</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/4/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/14/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/1/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/?category=shields</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/23/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/24/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io/products/25/</loc>
+  <lastmod>2023-05-28T18:00:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
