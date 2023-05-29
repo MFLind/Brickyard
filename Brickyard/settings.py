@@ -64,6 +64,7 @@ INSTALLED_APPS = [
     "basket",
     "checkout",
     "profiles",
+    "marketing",
     # Other
     "crispy_forms",
     'crispy_bootstrap5'
@@ -210,3 +211,7 @@ STRIPE_PUBLIC_KEY = os.getenv("STRIPE_PUBLIC_KEY", "")
 STRIPE_SECRET_KEY = os.getenv("STRIPE_SECRET_KEY", "")
 STRIPE_WH_SECRET = os.getenv("STRIPE_WH_SECRET", "")
 DEFAULT_FROM_EMAIL = "hej@brickyard.se"
+
+MAILCHIMP_API_KEY = os.getenv("MAILCHIMP_API_KEY", "")
+MAILCHIMP_REGION = os.getenv("MAILCHIMP_REGION", "")
+MAILCHIMP_MARKETING_AUDIENCE_ID = os.getenv("MAILCHIMP_MARKETING_AUDIENCE_ID", "")
