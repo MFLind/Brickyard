@@ -51,7 +51,8 @@ def subscribe_view(request):
 def subscribe_success_view(request):
     return render(request, 'marketing/message.html', {
         'title': 'Successfully subscribed',
-        'message': 'Yay, you have been successfully subscribed to our mailing list.',
+        'message': 'You have been successfully subscribed \
+            to our mailing list.',
     })
 
 
@@ -68,7 +69,8 @@ def unsubscribe_view(request):
         if form.is_valid():
             try:
                 form_email = form.cleaned_data['email']
-                form_email_hash = hashlib.md5(form_email.encode('utf-8').lower()).hexdigest()
+                form_email_hash = hashlib.md5(
+                    form_email.encode('utf-8').lower()).hexdigest()
                 member_update = {
                     'status': 'unsubscribed',
                 }
@@ -92,7 +94,8 @@ def unsubscribe_view(request):
 def unsubscribe_success_view(request):
     return render(request, 'marketing/message.html', {
         'title': 'Successfully unsubscribed',
-        'message': 'You have been successfully unsubscribed from our mailing list.',
+        'message': 'You have been successfully unsubscribed \
+            from our mailing list.',
     })
 
 
