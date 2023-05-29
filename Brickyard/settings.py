@@ -87,7 +87,7 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 CSRF_TRUSTED_ORIGINS = [
     "https://appname.herokuapp.com",
-    "https://8000-mflind-brickyard-rfxjysu0nlw.ws-eu97.gitpod.io",
+    "https://8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io",
 ]
 
 
