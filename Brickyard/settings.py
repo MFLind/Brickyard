@@ -154,10 +154,10 @@ WSGI_APPLICATION = "Brickyard.wsgi.application"
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-#    "default": {},
-#    'prod': dj_database_url.parse(os.getenv('DATABASE_URL')),
-#    'local': dj_database_url.parse(f"sqlite:////{BASE_DIR}/db.sqlite3")
-#    'default': dj_database_url.parse(f"sqlite:////{BASE_DIR}/db.sqlite3")
+    #    "default": {},
+    #    'prod': dj_database_url.parse(os.getenv('DATABASE_URL')),
+    #    'local': dj_database_url.parse(f"sqlite:////{BASE_DIR}/db.sqlite3")
+    #    'default': dj_database_url.parse(f"sqlite:////{BASE_DIR}/db.sqlite3")
     'default': dj_database_url.parse(os.getenv('DATABASE_URL')),
 }
 
