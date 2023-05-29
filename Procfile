@@ -1,1 +1,1 @@
-web: gunicorn BrickYard.wsgi --preload%
+web: gunicorn BrickYard.wsgi --preload
