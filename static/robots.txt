@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /accounts/
-Disallow: /checkout/
-Sitemap: https://brickyard.se/sitemap.xml
