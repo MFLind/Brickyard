@@ -72,6 +72,14 @@ The resulting real pages in BrickYard (www.brickyard.se):
 Datamodel is implemented with Django framework.
 
 (add data model image)
+  
+ # Social media
+  I have created Pintrest (@brickyard_lego_store) and Instagram (@brickyard_lego_store) account for BrickYard, these social networks are the primary channel for BrickYards customers.
+  
+  But I have made a mockup Facebook for Business page as below:
+  
+  ![facebook_brickyard](https://github.com/MFLind/Brickyard/assets/106115510/2e255929-5054-45e3-b51d-4402662e2c82)
+
 
 # Testing
 
