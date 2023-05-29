@@ -1,6 +1,6 @@
 asgiref==3.6.0
 astroid==2.14.2
-backports.zoneinfo==0.2.1
+backports.zoneinfo==0.2.1;python_version<"3.9"
 chardet==5.1.0
 crispy-bootstrap4==2022.1
 crispy-bootstrap5==0.7
@@ -17,6 +17,7 @@ django-tempus-dominus==5.1.2.17
 django-toast-messages==0.1
 gunicorn==20.1.0
 icalendar==5.0.4
+mailchimp-marketing==3.0.75
 oauthlib==3.2.2
 Pillow==9.5.0
 platformdirs==3.0.0
