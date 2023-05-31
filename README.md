@@ -62,6 +62,9 @@ This is the home page. On here you can read litel about what BrickYard are.
 ![image](https://github.com/MFLind/Brickyard/assets/106115510/2f9bb412-3c92-438a-bb4c-0408685fc816)
 This is the abut us page. On hear you can read about us and contact us. You can also subscribe so you can gate emails when new praducts comms up.
 
+![image](https://github.com/MFLind/Brickyard/assets/106115510/2ed9ef43-1048-4781-887a-4ef1cc5945ce)
+This is the shoping basket. On hear you can se all your products you have shos to by.
+
 # Features
 - abc
 - asd
