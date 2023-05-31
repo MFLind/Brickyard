@@ -65,6 +65,9 @@ This is the abut us page. On hear you can read about us and contact us. You can 
 ![image](https://github.com/MFLind/Brickyard/assets/106115510/2ed9ef43-1048-4781-887a-4ef1cc5945ce)
 This is the shoping basket. On hear you can se all your products you have shos to by.
 
+![image](https://github.com/MFLind/Brickyard/assets/106115510/1c9f81ef-1414-4acd-8b74-6f3791daa862)
+This is the loggin page. Hear can you loggin to you accont.
+
 # Features
 - abc
 - asd
