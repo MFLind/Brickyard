@@ -1,13 +1,13 @@
-{% extends "account/base.html" %}
+{% extends 'base.html' %}
+{% load static %}
 
-{% load i18n %}
+{% block content %}
+{% csrf_token %}
+{% block head_title %}Account Inactive{% endblock %}
 
-{% block head_title %}{% trans "Account Inactive" %}{% endblock %}
-
-{% block inner_content %}
 <hr>
-<h2 class="logo-font mb-4">{% trans "Account Inactive" %}</h2>
+<h2 class="logo-font mb-4">"Account Inactive</h2>
 <hr>
 
-<p>{% trans "This account is inactive." %}</p>
+<p>This account is inactive.</p>
 {% endblock %}
