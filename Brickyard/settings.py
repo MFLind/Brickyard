@@ -33,7 +33,9 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['brickyard.herokuapp.com', '8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io', 'www.brickyard.se', 'localhost']
+ALLOWED_HOSTS = ['brickyard.herokuapp.com',
+      '8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io',
+      'www.brickyard.se', 'localhost']
 
 MESSAGE_TAGS = {
     messages.DEBUG: "alert-info",
@@ -52,7 +54,9 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
+#    "cloudinary_storage",
     "django.contrib.staticfiles",
+#    "cloudinary",
     "django.contrib.sitemaps",
     "django.contrib.sites",
     "allauth",
@@ -138,6 +142,17 @@ AUTHENTICATION_BACKENDS = [
 SITE_ID = 1
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.office365.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER", "")
+EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD", "")
+
+# EMAIL_BACKEND = 'django_o365mail.EmailBackend'
+
+# O365_MAIL_CLIENT_ID = os.getenv("EMAIL_HOST_USER", "")
+# O365_MAIL_CLIENT_SECRET = os.getenv("EMAIL_HOST_PASSWORD", "")
+# O365_MAIL_TENANT_ID = os.getenv("O365_MAIL_TENANT_ID", "")
 
 ACCOUNT_AUTHENTICATION_METHOD = "username_email"
 ACCOUNT_EMAIL_REQUIRED = True
@@ -199,6 +214,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
+DJANGO_CLOUD_SS = 'cloudinary_storage.storage'
 
 STATIC_URL = "/static/"
 if not os.environ.get("PRODUCTION"):
@@ -206,6 +222,8 @@ if not os.environ.get("PRODUCTION"):
 else:
     STATICFILES_DIRS = []
     STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+    STATICFILES_STORAGE = f'{DJANGO_CLOUD_SS}.StaticHashedCloudinaryStorage'
+    DEFAULT_FILE_STORAGE = f'{DJANGO_CLOUD_SS}.storage.MediaCloudinaryStorage'
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
@@ -227,3 +245,9 @@ DEFAULT_FROM_EMAIL = "hej@brickyard.se"
 MAILCHIMP_API_KEY = os.getenv("MAILCHIMP_API_KEY", "")
 MAILCHIMP_REGION = os.getenv("MAILCHIMP_REGION", "")
 MAILCHIMP_MARKETING_AUDIENCE_ID = os.getenv("MAILCHIMP_MARKETING_AUDIENCE_ID")
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': os.getenv("CLOUD_NAME", ""),
+    'API_KEY': os.getenv("API_KEY", ""),
+    'API_SECRET': os.getenv("API_SECRET", "")
+}
