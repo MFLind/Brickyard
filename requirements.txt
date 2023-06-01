@@ -1,6 +1,6 @@
 asgiref==3.6.0
 astroid==2.15.5
-backports.zoneinfo==0.2.1
+backports.zoneinfo;python_version<"3.9"
 chardet==5.1.0
 cloudinary==1.33.0
 crispy-bootstrap4==2022.1
