@@ -33,7 +33,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['brickyard.herokuapp.com', '8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io', 'localhost']
+ALLOWED_HOSTS = ['brickyard.herokuapp.com', '8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io', 'brickyard.se', 'localhost']
 
 MESSAGE_TAGS = {
     messages.DEBUG: "alert-info",
