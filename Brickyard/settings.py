@@ -34,8 +34,8 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = True
 
 ALLOWED_HOSTS = ['brickyard.herokuapp.com',
-      '8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io',
-      'www.brickyard.se', 'localhost']
+                 '8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io',
+                 'www.brickyard.se', 'localhost']
 
 MESSAGE_TAGS = {
     messages.DEBUG: "alert-info",
@@ -54,9 +54,9 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
-#    "cloudinary_storage",
+    # "cloudinary_storage",
     "django.contrib.staticfiles",
-#    "cloudinary",
+    #    "cloudinary",
     "django.contrib.sitemaps",
     "django.contrib.sites",
     "allauth",
