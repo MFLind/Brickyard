@@ -54,9 +54,9 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
-    # "cloudinary_storage",
+    "cloudinary_storage",
     "django.contrib.staticfiles",
-    #    "cloudinary",
+    "cloudinary",
     "django.contrib.sitemaps",
     "django.contrib.sites",
     "allauth",
@@ -223,10 +223,10 @@ else:
     STATICFILES_DIRS = []
     STATIC_ROOT = os.path.join(BASE_DIR, 'static')
     STATICFILES_STORAGE = f'{DJANGO_CLOUD_SS}.StaticHashedCloudinaryStorage'
-    DEFAULT_FILE_STORAGE = f'{DJANGO_CLOUD_SS}.storage.MediaCloudinaryStorage'
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+DEFAULT_FILE_STORAGE = f'{DJANGO_CLOUD_SS}.MediaCloudinaryStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
