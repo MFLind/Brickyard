@@ -1,4 +1,6 @@
-from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
+""" Views for basket """
+from django.shortcuts import render, redirect, reverse, HttpResponse
+from django.shortcuts import get_object_or_404
 from django.contrib import messages
 
 from products.models import Product
@@ -29,7 +31,8 @@ def add_to_basket(request, item_id):
                 basket[item_id]["items_by_size"][size] += quantity
                 messages.success(
                     request,
-                    f'Updated size {size.upper()} {product.name} quantity to {basket[item_id]["items_by_size"][size]}',
+                    f'Updated size {size.upper()} {product.name} quantity to\
+                         {basket[item_id]["items_by_size"][size]}',
                 )
             else:
                 basket[item_id]["items_by_size"][size] = quantity
@@ -70,7 +73,8 @@ def adjust_basket(request, item_id):
             basket[item_id]["items_by_size"][size] = quantity
             messages.success(
                 request,
-                f'Updated size {size.upper()} {product.name} quantity to {basket[item_id]["items_by_size"][size]}',
+                f'Updated size {size.upper()} {product.name} quantity to\
+                     {basket[item_id]["items_by_size"][size]}',
             )
         else:
             del basket[item_id]["items_by_size"][size]
@@ -117,6 +121,6 @@ def remove_from_basket(request, item_id):
         request.session["basket"] = basket
         return HttpResponse(status=200)
 
-    except Exception as e:
-        messages.error(request, f"Error removing item: {e}")
+    except Exception as exception:
+        messages.error(request, f"Error removing item: {exception}")
         return HttpResponse(status=500)

@@ -1,3 +1,4 @@
+""" URL paths for basket """
 from django.urls import path
 from . import views
 
