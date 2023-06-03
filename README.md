@@ -8,6 +8,15 @@ BrickYard is actually starting up as a new company using my platform that is cre
 
 As part of the project I have defined a model for article number (SKU), Lego already today have their numbers, but they doesn't take in acount the color of bricks.
 
+BrickYard app is managed on my Github as repository BrichYard, the final production solution is deployed on Heroku with using ElephantSQL as database backend.
+Domain is registered via Godaddy.com and email service is Microsoft Office 365 for domain. 
+For sending marketing mail MailChimp is used for managing mailing list, API is used for subscribing user and unsubscribing.
+When sending other mails Heroku addon Mailgun is used via AnyMail django plugin. 
+Payment service is integrated against Stripe.
+
+My next step is to improve the service and go public with webshop as a real business.
+
+
 The definition is: articleno = [number]-[color]
 Example: 451511-002 White Lego Pieces
 
@@ -69,14 +78,15 @@ This is the shoping basket. On hear you can se all your products you have shos t
 This is the loggin page. Hear can you loggin to you accont.
 
 # Features
-- abc
-- asd
-- xxx
+- Managed product handling via super user login for adding, edit and delete products.
+- Martketing support via Mailchimp for mailing list
+- Customer login for handling profiles and checkout
+- Checkout via Stripe
 
 ## Future improvement
-- ....
-- xxxx
-- yyyy
+- Handle product stock and warehousing
+- Enable bought TLS/SSL certificate of the Heroko service
+- My own step in development is to study and learn React (and also React Native), so my goal is to change frontend code to React Frontend.
 
 # Data model
 Datamodel is implemented with Django framework.
@@ -96,9 +106,8 @@ Datamodel is implemented with Django framework.
 I have done manual testing with the following methods:
 - Running thru pylint for PEP8 validation and getting no errors
 - Running Black (https://github.com/psf/black) to validate coding style and format
-- xxxx
-- sfgds
-- sfgdsfg
+- Validation of different operating systems and browsers to validate compability
+
 
 ## Bugs
 The development was done iterative and testing and finding bugs occure during the coding process.
@@ -112,9 +121,27 @@ The development was done iterative and testing and finding bugs occure during th
 - Black locally on my computer
 
 ## Deployment
-(description of deployments)
+Deploying via Heroku and setting up ElefantSQL.
+- Create a new App in Heroku
+- Link to Brickyard repository in Github
+- Add plugin Mailgun for mail service
+- Add Buildpackage: heroku/python
+
+Setup up propery parameters for the services:
+SECRET_KEY=""
+STRIPE_PUBLIC_KEY=""
+STRIPE_SECRET_KEY=""
+STRIPE_WH_SECRET=""
+MAILCHIMP_API_KEY = ""
+MAILCHIMP_REGION = ""
+CLOUD_NAME=""
+API_KEY=""
+API_SECRET=""
+EMAIL_HOST_USER=""
+EMAIL_HOST_PASSWORD=""
+O365_MAIL_TENANT_ID=""
 
 # Credits
-- Special thanks to Patrik Lindergren for sponsering with Heroku and Figma account.
+- Special thanks to Patrik Lindergren and Quagga Technologies AB for sponsering with Heroku and Figma account.
 
 
