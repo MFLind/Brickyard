@@ -33,9 +33,12 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['brickyard.herokuapp.com',
-                 '8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io',
-                 'www.brickyard.se', 'localhost']
+ALLOWED_HOSTS = [
+    "brickyard.herokuapp.com",
+    "8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io",
+    "www.brickyard.se",
+    "localhost",
+]
 
 MESSAGE_TAGS = {
     messages.DEBUG: "alert-info",
@@ -72,7 +75,7 @@ INSTALLED_APPS = [
     # Other
     "anymail",
     "crispy_forms",
-    'crispy_bootstrap5'
+    "crispy_bootstrap5",
 ]
 
 MIDDLEWARE = [
@@ -161,11 +164,13 @@ SITE_ID = 1
 
 ANYMAIL = {
     # (exact settings here depend on your ESP...)
-    "MAILGUN_API_KEY": os.environ.get('MAILGUN_API_KEY', ''),
-    "MAILGUN_SENDER_DOMAIN": 'brickyard.se',
-    "MAILGUN_API_URL": "https://api.eu.mailgun.net/v3"
+    "MAILGUN_API_KEY": os.environ.get("MAILGUN_API_KEY", ""),
+    "MAILGUN_SENDER_DOMAIN": "brickyard.se",
+    "MAILGUN_API_URL": "https://api.eu.mailgun.net/v3",
 }
-EMAIL_BACKEND = "anymail.backends.mailgun.EmailBackend"  # or sendgrid.EmailBackend, or...
+EMAIL_BACKEND = (
+    "anymail.backends.mailgun.EmailBackend"  # or sendgrid.EmailBackend, or...
+)
 DEFAULT_FROM_EMAIL = "hej@brickyard.se"  # if you don't already have this in settings
 SERVER_EMAIL = "hej@brickyard.se"  # ditto (default from-email for Django errors)
 
@@ -189,7 +194,7 @@ DATABASES = {
     #    'prod': dj_database_url.parse(os.getenv('DATABASE_URL')),
     #    'local': dj_database_url.parse(f"sqlite:////{BASE_DIR}/db.sqlite3")
     #    'default': dj_database_url.parse(f"sqlite:////{BASE_DIR}/db.sqlite3")
-    'default': dj_database_url.parse(os.getenv('DATABASE_URL')),
+    "default": dj_database_url.parse(os.getenv("DATABASE_URL")),
 }
 
 
@@ -230,19 +235,19 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
-DJANGO_CLOUD_SS = 'cloudinary_storage.storage'
+DJANGO_CLOUD_SS = "cloudinary_storage.storage"
 
 STATIC_URL = "/static/"
 if not os.environ.get("PRODUCTION"):
     STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 else:
     STATICFILES_DIRS = []
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-    STATICFILES_STORAGE = f'{DJANGO_CLOUD_SS}.StaticHashedCloudinaryStorage'
+    STATIC_ROOT = os.path.join(BASE_DIR, "static")
+    STATICFILES_STORAGE = f"{DJANGO_CLOUD_SS}.StaticHashedCloudinaryStorage"
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
-DEFAULT_FILE_STORAGE = f'{DJANGO_CLOUD_SS}.MediaCloudinaryStorage'
+DEFAULT_FILE_STORAGE = f"{DJANGO_CLOUD_SS}.MediaCloudinaryStorage"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
@@ -263,7 +268,7 @@ MAILCHIMP_REGION = os.getenv("MAILCHIMP_REGION", "")
 MAILCHIMP_MARKETING_AUDIENCE_ID = os.getenv("MAILCHIMP_MARKETING_AUDIENCE_ID")
 
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': os.getenv("CLOUD_NAME", ""),
-    'API_KEY': os.getenv("API_KEY", ""),
-    'API_SECRET': os.getenv("API_SECRET", "")
+    "CLOUD_NAME": os.getenv("CLOUD_NAME", ""),
+    "API_KEY": os.getenv("API_KEY", ""),
+    "API_SECRET": os.getenv("API_SECRET", ""),
 }

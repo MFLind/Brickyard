@@ -25,11 +25,11 @@ def aboutus(request):
 
 
 def p_error_404_view(request):
-    return render(request, 'home/404.html')
+    return render(request, "home/404.html")
 
 
 def error_404_view(request, exception):
-    return render(request, 'home/404.html')
+    return render(request, "home/404.html")
 
 
 @require_GET
@@ -45,6 +45,6 @@ def robots_txt(request):
 
 @require_GET
 def sitemap_xml(request):
-    file1 = open('sitemap.xml', 'r')
+    file1 = open("sitemap.xml", "r")
     lines = file1.readlines()
     return HttpResponse("\n".join(lines), content_type="text/plain")

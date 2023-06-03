@@ -4,8 +4,8 @@ from django.contrib.sitemaps.views import sitemap, index
 from Brickyardshop.sitemap import ProductSitemap, CategoriesSitemap
 
 sitemaps = {
-    'products': ProductSitemap,
-    'categories': CategoriesSitemap,
+    "products": ProductSitemap,
+    "categories": CategoriesSitemap,
 }
 
 
@@ -29,4 +29,4 @@ urlpatterns = [
          name='django.contrib.sitemaps.views.sitemap'),
 ]
  """
-handler404 = 'Brickyardshop.views.error_404_view'
+handler404 = "Brickyardshop.views.error_404_view"

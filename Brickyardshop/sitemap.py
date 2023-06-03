@@ -5,7 +5,7 @@ from products.models import Product, Category
 
 class ProductSitemap(sitemaps.Sitemap):
     priority = 0.6
-    changefreq = 'monthly'
+    changefreq = "monthly"
 
     def items(self):
         # URLs names
@@ -17,7 +17,7 @@ class ProductSitemap(sitemaps.Sitemap):
 
 class CategoriesSitemap(sitemaps.Sitemap):
     priority = 0.6
-    changefreq = 'monthly'
+    changefreq = "monthly"
 
     def items(self):
         # URLs names
