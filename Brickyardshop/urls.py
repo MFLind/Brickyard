@@ -1,3 +1,4 @@
+""" URL for mail site """
 from django.urls import path
 from . import views
 from django.contrib.sitemaps.views import sitemap, index

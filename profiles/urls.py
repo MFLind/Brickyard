@@ -1,3 +1,4 @@
+""" URL for profiles """
 from django.urls import path
 from . import views
 

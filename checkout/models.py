@@ -1,3 +1,4 @@
+""" Models for checkout """
 import uuid
 
 from django.db import models
@@ -10,6 +11,7 @@ from products.models import Product
 
 
 class Order(models.Model):
+    """ Order model """
     order_number = models.CharField(max_length=32, null=False, editable=False)
     full_name = models.CharField(max_length=50, null=False, blank=False)
     email = models.EmailField(max_length=254, null=False, blank=False)
@@ -66,10 +68,12 @@ class Order(models.Model):
         super().save(*args, **kwargs)
 
     def __str__(self):
+        """ return order number """
         return self.order_number
 
 
 class OrderLineItem(models.Model):
+    """ OrderLineItem model """
     order = models.ForeignKey(
         Order,
         null=False,
@@ -97,4 +101,5 @@ class OrderLineItem(models.Model):
         super().save(*args, **kwargs)
 
     def __str__(self):
+        """ return order line """
         return f"SKU {self.product.sku} on order {self.order.order_number}"

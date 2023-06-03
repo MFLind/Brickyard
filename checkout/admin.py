@@ -1,13 +1,16 @@
+""" Admin module for checkout """
 from django.contrib import admin
 from .models import Order, OrderLineItem
 
 
 class OrderLineItemAdminInline(admin.TabularInline):
+    """ OrderLineItem """
     model = OrderLineItem
     readonly_fields = ("lineitem_total",)
 
 
 class OrderAdmin(admin.ModelAdmin):
+    """ OrderAdmin """
     inlines = (OrderLineItemAdminInline,)
 
     readonly_fields = (

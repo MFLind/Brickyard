@@ -1,3 +1,4 @@
+""" Model for Profiles """
 from django.db import models
 from django.contrib.auth.models import User
 from django.db.models.signals import post_save
@@ -22,6 +23,7 @@ class UserProfile(models.Model):
     default_country = CountryField(blank_label="Country", null=True, blank=True)
 
     def __str__(self):
+        """ Str for user profile """
         return self.user.username
 
 

@@ -1,3 +1,4 @@
+""" Admin module """
 from django.contrib import admin
 from .models import Product, Category
 
@@ -5,6 +6,7 @@ from .models import Product, Category
 
 
 class ProductAdmin(admin.ModelAdmin):
+    """ Product Admin Model """
     list_display = (
         "sku",
         "name",
@@ -17,6 +19,7 @@ class ProductAdmin(admin.ModelAdmin):
 
 
 class CategoryAdmin(admin.ModelAdmin):
+    """ Category Admin model """
     list_display = (
         "friendly_name",
         "name",

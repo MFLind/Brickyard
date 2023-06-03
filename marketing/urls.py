@@ -1,3 +1,4 @@
+""" URLs for marketing """
 from django.urls import path
 
 from . import views

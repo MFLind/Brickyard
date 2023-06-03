@@ -1,11 +1,12 @@
+""" Views for Marketing """
+import logging
+import hashlib
 from django.http import JsonResponse
 from django.shortcuts import render, redirect
 from mailchimp_marketing import Client
+from mailchimp_marketing.api_client import ApiClientError
 from Brickyard import settings
 from marketing.forms import EmailForm
-from mailchimp_marketing.api_client import ApiClientError
-import logging
-import hashlib
 
 
 logger = logging.getLogger(__name__)
@@ -19,12 +20,16 @@ mailchimp.set_config(
 )
 
 
-def mailchimp_ping_view(request):
+def mailchimp_ping_view(
+      request  # pylint: disable=unused-argument
+):
+    """ handling testing mailchimp with ping message """
     response = mailchimp.ping.get()
     return JsonResponse(response)
 
 
 def subscribe_view(request):
+    """ handle subscribing view """
     if request.method == "POST":
         form = EmailForm(request.POST)
         if form.is_valid():
@@ -38,11 +43,11 @@ def subscribe_view(request):
                     settings.MAILCHIMP_MARKETING_AUDIENCE_ID,
                     member_info,
                 )
-                logger.info(f"API call successful: {response}")
+                logger.info("API call successful: {}", response)
                 return redirect("subscribe-success")
 
             except ApiClientError as error:
-                logger.error(f"An exception occurred: {error.text}")
+                logger.error("An exception occurred: {}", error.text)
                 return redirect("subscribe-fail")
 
     return render(
@@ -55,6 +60,7 @@ def subscribe_view(request):
 
 
 def subscribe_success_view(request):
+    """ handle subscribe success """
     return render(
         request,
         "marketing/message.html",
@@ -67,6 +73,7 @@ def subscribe_success_view(request):
 
 
 def subscribe_fail_view(request):
+    """ handle subscribe fail """
     return render(
         request,
         "marketing/message.html",
@@ -78,6 +85,7 @@ def subscribe_fail_view(request):
 
 
 def unsubscribe_view(request):
+    """ handle unsubscribing view """
     if request.method == "POST":
         form = EmailForm(request.POST)
         if form.is_valid():
@@ -94,11 +102,11 @@ def unsubscribe_view(request):
                     form_email_hash,
                     member_update,
                 )
-                logger.info(f"API call successful: {response}")
+                logger.info("API call successful: {}", response)
                 return redirect("unsubscribe-success")
 
             except ApiClientError as error:
-                logger.error(f"An exception occurred: {error.text}")
+                logger.error("An exception occurred: {}", error.text)
                 return redirect("unsubscribe-fail")
 
     return render(
@@ -111,6 +119,7 @@ def unsubscribe_view(request):
 
 
 def unsubscribe_success_view(request):
+    """ handle subscribe success """
     return render(
         request,
         "marketing/message.html",
@@ -123,6 +132,7 @@ def unsubscribe_success_view(request):
 
 
 def unsubscribe_fail_view(request):
+    """ handle subscribe fail """
     return render(
         request,
         "marketing/message.html",
