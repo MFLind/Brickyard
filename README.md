@@ -107,6 +107,9 @@ I have done manual testing with the following methods:
 - Running thru pylint for PEP8 validation and getting no errors
 - Running Black (https://github.com/psf/black) to validate coding style and format
 - Validation of different operating systems and browsers to validate compability
+- Registering new user
+- Add products to basket and concluse purchase
+- Add, edit and delete products
 
 
 ## Bugs
