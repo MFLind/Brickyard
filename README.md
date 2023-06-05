@@ -8,10 +8,10 @@ BrickYard is actually starting up as a new company using my platform that is cre
 
 As part of the project I have defined a model for article number (SKU), Lego already today have their numbers, but they doesn't take in acount the color of bricks.
 
-BrickYard app is managed on my Github as repository BrichYard, the final production solution is deployed on Heroku with using ElephantSQL as database backend.
+BrickYard app is managed on my Github as repository BrickYard, the final production solution is deployed on Heroku with using ElephantSQL as database backend.
 Domain is registered via Godaddy.com and email service is Microsoft Office 365 for domain. 
 For sending marketing mail MailChimp is used for managing mailing list, API is used for subscribing user and unsubscribing.
-When sending other mails Heroku addon Mailgun is used via AnyMail django plugin. 
+When sending other mails Heroku add-on Mailgun is used via AnyMail django plugin. 
 Payment service is integrated against Stripe.
 
 My next step is to improve the service and go public with webshop as a real business.
@@ -78,7 +78,10 @@ This is the abut us page. On hear you can read about us and contact us. You can 
 This is the shoping basket. On hear you can se all your products you have shos to by.
 
 ![image](https://github.com/MFLind/Brickyard/assets/106115510/1c9f81ef-1414-4acd-8b74-6f3791daa862)
-This is the loggin page. Hear can you loggin to you accont.
+This is the loggin page. Hear can you login to you accont.
+
+<img width="1325" alt="image" src="https://github.com/MFLind/Brickyard/assets/106115510/b3330299-d67f-4631-b9ad-deba29420150">
+Signup page for mailing list, using Mailchimp in backend side.
 
 # Features
 - Managed product handling via super user login for adding, edit and delete products.
@@ -112,7 +115,7 @@ I have done manual testing with the following methods:
 - Running Black (https://github.com/psf/black) to validate coding style and format
 - Validation of different operating systems and browsers to validate compability
 - Registering new user
-- Add products to basket and concluse purchase
+- Add products to basket and conclude purchase
 - Add, edit and delete products
 
 
@@ -121,7 +124,7 @@ The development was done iterative and testing and finding bugs occure during th
 
 ## Remaining bugs
 - Some Pylint issues still exists.
-- gfdsag
+- Image resizing via Cloudinary is required for the shop.
 
 ## Validator Testing
 - PEP8 via pylint locally on my computer
