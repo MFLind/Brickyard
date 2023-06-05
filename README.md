@@ -104,7 +104,7 @@ Datamodel is implemented with Django framework.
 # Testing
 
 I have done manual testing with the following methods:
-- Running thru pylint for PEP8 validation and getting no errors
+- Running thru pylint for PEP8 validation, some warning exists but most are cleaned up.
 - Running Black (https://github.com/psf/black) to validate coding style and format
 - Validation of different operating systems and browsers to validate compability
 - Registering new user
@@ -116,7 +116,7 @@ I have done manual testing with the following methods:
 The development was done iterative and testing and finding bugs occure during the coding process.
 
 ## Remaining bugs
-- dfga 
+- Some Pylint issues still exists.
 - gfdsag
 
 ## Validator Testing
