@@ -2,6 +2,9 @@
 
 BrickYard is the webshop for collectable Lego bricks and pieces.
 
+<img width="1507" alt="MicrosoftTeams-image (23)" src="https://github.com/MFLind/Brickyard/assets/106115510/433d0c10-c7b6-46a5-b999-7947b5ea18a1">
+
+
 At BrickYard, we are passionate about LEGO and dedicated to bringing you a wide range of LEGO pieces to enhance your building adventures. Whether you're a seasoned LEGO enthusiast or just starting your brick collection, we have something for everyone.
 
 BrickYard is actually starting up as a new company using my platform that is created in this project.
@@ -118,6 +121,9 @@ I have done manual testing with the following methods:
 - Add products to basket and conclude purchase
 - Add, edit and delete products
 
+<img width="579" alt="image" src="https://github.com/MFLind/Brickyard/assets/106115510/b2efc4b1-ebf9-4978-8ae4-031b29f9a738">
+
+Scoring might related to my color choice, the color choice is made on purpose to reflect the retro Lego colors.
 
 ## Bugs
 The development was done iterative and testing and finding bugs occure during the coding process.
