@@ -21,7 +21,9 @@ if not os.environ.get("PRODUCTION"):
     load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+# BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 
 
 # Quick-start development settings - unsuitable for production
@@ -272,4 +274,6 @@ CLOUDINARY_STORAGE = {
     "CLOUD_NAME": os.getenv("CLOUD_NAME", ""),
     "API_KEY": os.getenv("API_KEY", ""),
     "API_SECRET": os.getenv("API_SECRET", ""),
+    # other settings, like credentials
+    'STATICFILES_MANIFEST_ROOT': os.path.join(BASE_DIR, 'my-manifest-directory')
 }
