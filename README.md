@@ -121,6 +121,18 @@ I have done manual testing with the following methods:
 - Add products to basket and conclude purchase
 - Add, edit and delete products
 
+When running Pylint it insist to complain about having field_name tuple in below to be remove, that breaks the code.
+    def __init__(self, *args, **kwargs):
+        """ Constructor for product form """
+        super().__init__(*args, **kwargs)
+        categories = Category.objects.all()
+        friendly_names = [(c.id, c.get_friendly_name()) for c in categories]
+
+        self.fields["category"].choices = friendly_names
+        for field_name, field in self.fields.items():
+            field.widget.attrs["class"] = "border-black rounded-0"
+
+
 <img width="579" alt="image" src="https://github.com/MFLind/Brickyard/assets/106115510/b2efc4b1-ebf9-4978-8ae4-031b29f9a738">
 
 Scoring might related to my color choice, the color choice is made on purpose to reflect the retro Lego colors.
