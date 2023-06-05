@@ -140,6 +140,13 @@ Scoring might related to my color choice, the color choice is made on purpose to
 ## Bugs
 The development was done iterative and testing and finding bugs occure during the coding process.
 
+There seams to be a bug in Cloudinary when disable DEBUG mode, it fails handling STATIC files, same issue as other people have:
+https://stackoverflow.com/questions/73975267/why-do-i-get-this-typeerror-in-django-cloudinary-when-running-debug-false
+
+I tries different ways to solve it, but are bit stuck at the moment, all other parts works fine, but only this as a major issue.
+
+I could/will fix this with bit mentoring or more time to try fixing it.
+
 ## Remaining bugs
 - Some Pylint issues still exists.
 - Reset password function doesn't work
