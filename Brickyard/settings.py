@@ -32,7 +32,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     "brickyard.herokuapp.com",
@@ -274,5 +274,5 @@ CLOUDINARY_STORAGE = {
     "API_KEY": os.getenv("API_KEY", ""),
     "API_SECRET": os.getenv("API_SECRET", ""),
     # other settings, like credentials
-    'STATICFILES_MANIFEST_ROOT': os.path.join(BASE_DIR, 'my-manifest-directory')
+    'STATICFILES_MANIFEST_ROOT': os.path.join(BASE_DIR, './manifest')
 }
