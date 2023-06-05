@@ -68,6 +68,9 @@ The resulting real pages in BrickYard (www.brickyard.se):
 ![image](https://github.com/MFLind/Brickyard/assets/106115510/dc245c5a-b33c-4ce6-b892-f7194723513a)
 This is the home page. On here you can read litel about what BrickYard are. 
 
+<img width="1325" alt="image" src="https://github.com/MFLind/Brickyard/assets/106115510/68d532a9-6414-4390-85a7-6b31300bcd21">
+This is a view of the store page.
+
 ![image](https://github.com/MFLind/Brickyard/assets/106115510/2f9bb412-3c92-438a-bb4c-0408685fc816)
 This is the abut us page. On hear you can read about us and contact us. You can also subscribe so you can gate emails when new praducts comms up.
 
