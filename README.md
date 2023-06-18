@@ -122,6 +122,13 @@ I have done manual testing with the following methods:
 - Add products to basket and conclude purchase
 - Add, edit and delete products
 
+Testing with Stripe test according:
+Testing interactively
+When testing interactively, use a card number, such as 4242 4242 4242 4242. Enter the card number in the Dashboard or in any payment form.
+Use a valid future date, such as 12/34.
+Use any three-digit CVC (four digits for American Express cards).
+Use any value you like for other form fields.
+
 When running Pylint it insist to complain about having field_name tuple in below to be remove, that breaks the code.
     def __init__(self, *args, **kwargs):
         """ Constructor for product form """
