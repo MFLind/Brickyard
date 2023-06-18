@@ -14,7 +14,6 @@ urlpatterns = [
     path("", views.index, name="home"),
     path("contact", views.contact, name="contact"),
     path("aboutus", views.aboutus, name="aboutus"),
-    path("error", views.p_error_404_view, name="error"),
     path("robots.txt", views.robots_txt),
     path("sitemap.xml", views.sitemap_xml),
 ]
@@ -30,4 +29,3 @@ urlpatterns = [
          name='django.contrib.sitemaps.views.sitemap'),
 ]
  """
-handler404 = "Brickyardshop.views.error_404_view"

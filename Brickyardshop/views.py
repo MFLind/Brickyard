@@ -22,14 +22,24 @@ def aboutus(request):
     return render(request, "home/aboutus.html")
 
 
-def p_error_404_view(request):
-    """ 404 page error test view for being in debug """
-    return render(request, "home/404.html")
-
-
 def error_404_view(request, exception):
-    """ 404 page error """
+    """ 404 - page not found view """
     return render(request, "home/404.html")
+
+
+def error_500_view(request):
+    """ 500 - error view """
+    return render(request, "home/500.html")
+
+
+def error_403_view(request, exception):
+    """ 403 - permission denied view """
+    return render(request, "home/403.html")
+
+
+def error_400_view(request, exception):
+    """ 400 - bad request view """
+    return render(request, "home/400.html")
 
 
 @require_GET

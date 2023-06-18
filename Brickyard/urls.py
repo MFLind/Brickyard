@@ -29,3 +29,8 @@ urlpatterns = [
     path("profile/", include("profiles.urls")),
     path("marketing/", include("marketing.urls")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+handler404 = "Brickyardshop.views.error_404_view"
+handler500 = 'Brickyardshop.views.error_500_view'
+handler403 = 'Brickyardshop.views.error_403_view'
+handler400 = 'Brickyardshop.views.error_400_view'

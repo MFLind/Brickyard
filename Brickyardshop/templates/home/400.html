@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+{% csrf_token %}
+
+<div class="container">
+    <div class="row h-100 justify-content-center align-items-center rounded-lg p-5 m-5"
+        style="background-color: rgba(248, 60, 60, 1);">
+        <div class="col">
+            <div class="card" style="width: 24em; background-color: rgba(154, 170, 255, 1);">
+                <div class="card-body">
+                    <h5 class="card-title">400: Bad request</h5>
+                    <p class="card-text">
+                        Oh no! The boat Crashed in to your computer.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <img class="img-fluid" src="{% static 'assets/images/IMG_4137.png' %}" alt="lego_boat"
+                style="max-width: 50%;" />
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
