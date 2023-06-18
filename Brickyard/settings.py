@@ -145,28 +145,11 @@ AUTHENTICATION_BACKENDS = [
 
 SITE_ID = 1
 
-# EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-# EMAIL_USE_TLS = True
-# EMAIL_HOST = 'smtp.office365.com'
-# EMAIL_PORT = 587
-# EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER", "")
-# EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD", "")
-# EMAIL_HOST = os.environ.get('MAILGUN_SMTP_SERVER', '')
-# EMAIL_PORT = os.environ.get('MAILGUN_SMTP_PORT', '')
-# EMAIL_HOST_USER = os.environ.get('MAILGUN_SMTP_LOGIN', '')
-# EMAIL_HOST_PASSWORD = os.environ.get('MAILGUN_SMTP_PASSWORD', '')
-
-# EMAIL_BACKEND = 'django_o365mail.EmailBackend'
-
-# O365_MAIL_CLIENT_ID = os.getenv("EMAIL_HOST_USER", "")
-# O365_MAIL_CLIENT_SECRET = os.getenv("EMAIL_HOST_PASSWORD", "")
-# O365_MAIL_TENANT_ID = os.getenv("O365_MAIL_TENANT_ID", "")
-
 ANYMAIL = {
     # (exact settings here depend on your ESP...)
     "MAILGUN_API_KEY": os.environ.get("MAILGUN_API_KEY", ""),
     "MAILGUN_SENDER_DOMAIN": os.getenv("MAILGUN_DOMAIN", ""),
-    "MAILGUN_API_URL": "https://api.eu.mailgun.net/v3",
+    "MAILGUN_API_URL": os.getenv("MAILGUN_API_URL", ""),
 }
 EMAIL_BACKEND = (
     "anymail.backends.mailgun.EmailBackend"  # or sendgrid.EmailBackend, or...
