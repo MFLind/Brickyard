@@ -150,7 +150,6 @@ The development was done iterative and testing and finding bugs occure during th
 
 ## Remaining bugs
 - Some Pylint issues still exists.
-- Reset password function doesn't work
 - Image resizing via Cloudinary is required for the shop.
 
 ## Validator Testing
