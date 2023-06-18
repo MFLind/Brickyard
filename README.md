@@ -1,6 +1,6 @@
 # BrickYard
 
-BrickYard is the webshop for collectable Lego bricks and pieces.
+BrickYard is the webshop for collectable Lego bricks and pieces for Business to Consumer.
 
 <img width="1507" alt="MicrosoftTeams-image (23)" src="https://github.com/MFLind/Brickyard/assets/106115510/433d0c10-c7b6-46a5-b999-7947b5ea18a1">
 
@@ -32,6 +32,7 @@ Example: 451511-002 White Lego Pieces
 | 005 | Yellow | 
 | 006 | Brown |
 | 007 | Gray |
+
 
 
 
@@ -139,13 +140,6 @@ Scoring might related to my color choice, the color choice is made on purpose to
 
 ## Bugs
 The development was done iterative and testing and finding bugs occure during the coding process.
-
-There seams to be a bug in Cloudinary when disable DEBUG mode, it fails handling STATIC files, same issue as other people have:
-https://stackoverflow.com/questions/73975267/why-do-i-get-this-typeerror-in-django-cloudinary-when-running-debug-false
-
-I tries different ways to solve it, but are bit stuck at the moment, all other parts works fine, but only this as a major issue.
-
-I could/will fix this with bit mentoring or more time to try fixing it.
 
 ## Remaining bugs
 - Some Pylint issues still exists.
