@@ -32,11 +32,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv("DEBUG", True)
 
 ALLOWED_HOSTS = [
     "brickyard.herokuapp.com",
-    "8000-mflind-brickyard-oywbjfhna6q.ws-eu98.gitpod.io",
+    "8000-mflind-brickyard-oywbjfhna6q.ws-eu100.gitpod.io",
     "www.brickyard.se",
     "localhost",
 ]
@@ -81,7 +81,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
-    "whitenoise.middleware.WhiteNoiseMiddleware",
+    #   "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     #   'django.middleware.csrf.CsrfViewMiddleware',
@@ -128,12 +128,11 @@ TEMPLATES = [
     },
 ]
 
-STORAGES = {
-    # ...
-    "staticfiles": {
-        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
-    },
-}
+# STORAGES = {
+#    "staticfiles": {
+#        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+#    },
+# }
 
 MESSAGE_STORAGE = "django.contrib.messages.storage.session.SessionStorage"
 
@@ -240,12 +239,12 @@ USE_TZ = True
 DJANGO_CLOUD_SS = "cloudinary_storage.storage"
 
 STATIC_URL = "/static/"
-if not os.environ.get("PRODUCTION"):
-    STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
-else:
-    STATICFILES_DIRS = []
-    STATIC_ROOT = os.path.join(BASE_DIR, "static")
-    STATICFILES_STORAGE = f"{DJANGO_CLOUD_SS}.StaticHashedCloudinaryStorage"
+# if not os.environ.get("PRODUCTION"):
+#     STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
+# else:
+STATICFILES_DIRS = []
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
+STATICFILES_STORAGE = f"{DJANGO_CLOUD_SS}.StaticHashedCloudinaryStorage"
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
