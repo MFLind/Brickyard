@@ -165,14 +165,14 @@ SITE_ID = 1
 ANYMAIL = {
     # (exact settings here depend on your ESP...)
     "MAILGUN_API_KEY": os.environ.get("MAILGUN_API_KEY", ""),
-    "MAILGUN_SENDER_DOMAIN": "brickyard.se",
+    "MAILGUN_SENDER_DOMAIN": os.getenv("MAILGUN_DOMAIN", ""),
     "MAILGUN_API_URL": "https://api.eu.mailgun.net/v3",
 }
 EMAIL_BACKEND = (
     "anymail.backends.mailgun.EmailBackend"  # or sendgrid.EmailBackend, or...
 )
-DEFAULT_FROM_EMAIL = "hej@brickyard.se"
-SERVER_EMAIL = "hej@brickyard.se"
+DEFAULT_FROM_EMAIL = os.getenv("SENDER_EMAIL", "")
+SERVER_EMAIL = os.getenv("SENDER_EMAIL", "")
 
 
 ACCOUNT_AUTHENTICATION_METHOD = "username_email"
