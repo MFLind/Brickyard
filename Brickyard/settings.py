@@ -53,12 +53,12 @@ MESSAGE_TAGS = {
 
 
 INSTALLED_APPS = [
+    "cloudinary_storage",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
-    "cloudinary_storage",
     "django.contrib.staticfiles",
     "cloudinary",
     "django.contrib.sitemaps",
@@ -171,8 +171,8 @@ ANYMAIL = {
 EMAIL_BACKEND = (
     "anymail.backends.mailgun.EmailBackend"  # or sendgrid.EmailBackend, or...
 )
-DEFAULT_FROM_EMAIL = "hej@brickyard.se"  # if you don't already have this in settings
-SERVER_EMAIL = "hej@brickyard.se"  # ditto (default from-email for Django errors)
+DEFAULT_FROM_EMAIL = "hej@brickyard.se"
+SERVER_EMAIL = "hej@brickyard.se"
 
 
 ACCOUNT_AUTHENTICATION_METHOD = "username_email"
@@ -238,12 +238,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 DJANGO_CLOUD_SS = "cloudinary_storage.storage"
 
-STATIC_URL = "/static/"
-# if not os.environ.get("PRODUCTION"):
-#     STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
-# else:
-STATICFILES_DIRS = []
-STATIC_ROOT = os.path.join(BASE_DIR, "static")
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 STATICFILES_STORAGE = f"{DJANGO_CLOUD_SS}.StaticHashedCloudinaryStorage"
 
 MEDIA_URL = "/media/"
@@ -272,6 +268,4 @@ CLOUDINARY_STORAGE = {
     "CLOUD_NAME": os.getenv("CLOUD_NAME", ""),
     "API_KEY": os.getenv("API_KEY", ""),
     "API_SECRET": os.getenv("API_SECRET", ""),
-    # other settings, like credentials
-    'STATICFILES_MANIFEST_ROOT': os.path.join(BASE_DIR, './manifest')
 }
