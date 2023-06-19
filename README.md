@@ -90,6 +90,7 @@ This is the page that comes up when you have a 404 error.
 ## User Story: Browsing the Product Catalog
 1.	Story for Browsing the Product Catalog
 The customer should be able to browse various Lego sets by theme, age group, and price range.
+
 **Acceptance Criteria:**
 -	User can filter Lego sets by theme, age group, and price.
 -	User can sort Lego sets by popularity, new releases, and price.
@@ -97,6 +98,7 @@ The customer should be able to browse various Lego sets by theme, age group, and
 2.	Story for Adding Products to the Shopping Cart
 The customer should be able to add Lego sets to my shopping cart,
 So that they can collect all desired sets in one place before checkout.
+
 **Acceptance Criteria:**
 -	User can add a Lego set to the cart from the product detail page.
 -	User can view the number of items in the cart.
@@ -104,6 +106,7 @@ So that they can collect all desired sets in one place before checkout.
 3.	Story for Checking Out and Making a Purchase
 The customer should be able to check out smoothly and securely,
 So that they can confidently make a purchase.
+
 **Acceptance Criteria:**
 -	User can view a detailed breakdown of the cart total, including taxes and shipping charges.
 -	User can enter shipping and billing information.
@@ -112,6 +115,7 @@ So that they can confidently make a purchase.
 4.	Story for Writing and Viewing Reviews
 The customer should be able to read and write reviews about Lego sets,
 So that they can make informed purchasing decisions and share my experience with others.
+
 **Acceptance Criteria:**
 -	User can view reviews on the product detail page.
 -	User can write a review, giving a star rating and leaving a comment.
@@ -119,6 +123,7 @@ So that they can make informed purchasing decisions and share my experience with
 5.	Story for Creating and Managing an Account
 The customer should be able to create an account,
 So that they can save my shipping information and track my orders.
+
 **Acceptance Criteria:**
 -	User can create an account with their email.
 -	User can log in and out of their account.
@@ -128,6 +133,7 @@ So that they can save my shipping information and track my orders.
 ## Story for Adding to and Managing a Wishlist
 The customer should be able to add Lego sets to my wishlist and manage it,
 So that I can save sets I'm interested in for future consideration or purchase.
+
 **Acceptance Criteria:**
 -	User can add a Lego set to their wishlist from the product detail page.
 -	User can view all items in their wishlist.
@@ -237,7 +243,7 @@ Deploying via Heroku and setting up ElefantSQL.
 - Add Buildpackage: heroku/python
 
 Setup up propery parameters for the services:
-`
+```
 SECRET_KEY=""
 STRIPE_PUBLIC_KEY=""
 STRIPE_SECRET_KEY=""
@@ -254,7 +260,7 @@ SENDER_EMAIL=""
 MAILGUN_DOMAIN=""
 MAILGUN_API_URL=""
 
-`
+```
 
 # Credits
 - Special thanks to Patrik Lindergren and Quagga Technologies AB for sponsering with Heroku and Figma account.
