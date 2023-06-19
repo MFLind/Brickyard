@@ -191,7 +191,39 @@ Datamodel is implemented with Django framework.
   ![facebook_brickyard](https://github.com/MFLind/Brickyard/assets/106115510/2e255929-5054-45e3-b51d-4402662e2c82)
 
 
+# Software solutions
+In the Brickyard project different components and tools has been used for design, development and deployment.
+
+## Development environment
+The development environment consist of:
+1. GitHub - Source control, project management and wikipage
+2. Figma - Web based UX design tool for creating prototype look and UX design
+3. GitPod - Web based Visual Code (also remote use of Visual code), development server and staging environment
+4. Visual Code - Development IDE for writing and remote work against Gitpod servers
+
+## Production environment
+The production enviroment is for final testing and system setup.
+1. Heroku - Application server setup and build streams
+2. ElephantSQL - For hosted PostgresSQL server
+3. Godaddy - Registration of domain Brickyard.se and DNS servers
+4. Microsoft 365 - Hosting mailserver for incoming mails for Brickyard.se
+5. Mailchimp - Managing of mailling list
+6. Stripe - Payment checkout service
+
+## Module dependencies
+- Django 4.1.6 - Used for backend and data model management and web rendering
+- Stripe - Payment checkout service 
+- Cloudinary - Storing and manage static files and media files
+- Bootstrap 5.0 - Frontend 
+- CSS
+- Django allauth - for user management
+- AnyMail - for interface mail sending
+
+
+
 # Testing
+
+The testing was conducting in several steps, the first level of verification is done in code validation and formatting by using Black formatter in Visual Code and also in command line. 
 
 I have done manual testing with the following methods:
 - Running thru pylint for PEP8 validation, some warning exists but most are cleaned up.
