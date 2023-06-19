@@ -49,7 +49,7 @@ def robots_txt(request):
         "User-Agent: *",
         "Disallow: /accounts/",
         "Disallow: /checkout/",
-        "Sitemap: https://brickyard.se/sitemap.xml",
+        "Sitemap: https://brickyard.herokuapp.com/sitemap.xml",
     ]
     return HttpResponse("\n".join(lines), content_type="text/plain")
 

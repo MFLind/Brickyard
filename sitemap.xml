@@ -8,263 +8,263 @@
 
 
 <url>
-  <loc>http://www.brickyard.se/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/basket/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/basket/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/?sort=price&amp;direction=asc</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/?sort=category&amp;direction=asc</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/?category=hospital_parts</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/?category=hospital_parts</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/?category=animanl_parts</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/?category=animanl_parts</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/?category=minifigures</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/?category=minifigures</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/?category=hospital_parts,animanl_parts,minifigures,headgear,car_parts,shields,hinger,blocks,space,watergear,hair</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/?category=hospital_parts,animanl_parts,minifigures,headgear,car_parts,shields,hinger,blocks,space,watergear,hair</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/?category=new_arrivals</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/?category=new_arrivals</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/?category=deals</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/?category=deals</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/?category=clearance</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/?category=clearance</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/?category=new_arrivals,deals,clearance</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/?category=new_arrivals,deals,clearance</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/aboutus</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/aboutus</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/marketing/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/marketing/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/marketing/unsubscribe/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/marketing/unsubscribe/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/3/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/3/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/?category=blocks</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/?category=blocks</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/9/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/21/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/?category=headgear</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/?category=space</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/6/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/10/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/8/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/?category=headgear</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/10/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/6/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/11/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/8/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/21/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/11/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/?category=space</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/9/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/17/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/15/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/?category=hinger</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/?category=car_parts</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/15/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/18/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/?category=car_parts</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/?category=hinger</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/18/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/17/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/5/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/28/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/28/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/?category=hair</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/?category=hair</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/5/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/27/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/19/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/19/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/27/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/13/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/13/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/12/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/20/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/7/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/7/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/26/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/12/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/20/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/26/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/2/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/2/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/16/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/22/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/22/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/?category=watergear</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/?category=watergear</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/16/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/14/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/14/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/4/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/4/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/1/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/1/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/?category=shields</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/?category=shields</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/23/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/24/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/24/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/23/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.brickyard.se/products/25/</loc>
-  <lastmod>2023-06-01T19:37:10+00:00</lastmod>
+  <loc>https://brickyard.herokuapp.com/products/25/</loc>
+  <lastmod>2023-06-19T06:47:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 

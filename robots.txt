@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /accounts/
+Disallow: /checkout/
+Sitemap: https://brickyard.herokuapp.com/sitemap.xml
