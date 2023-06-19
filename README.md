@@ -34,6 +34,27 @@ Example: 451511-002 White Lego Pieces
 | 007 | Gray |
 
 
+# Business Model
+
+*Brickyard* operates under the e-commerce business model where we purchase large quantities of old Lego sets from sources like eBay and other online marketplaces. We then refurbish these sets, break them down into individual pieces or figures (figs), and resell them on our platform. Our primary revenue comes from selling these unique and retro Lego bricks and figs to individual consumers, collectors, and enthusiasts. 
+
+Our competitive edge lies in our ability to source, refurbish, and offer rare and unique pieces that might otherwise be difficult to find, providing a marketplace for the niche community of Lego enthusiasts.
+
+We already have bought several lots of Lego over 100 kg (buying in bulk), for example in these lot we have refurbished over 250 minifigs, where just around 10 of these minifigs have repaid the original investment cost.
+
+# Marketing Strategy
+
+1. **Target Audience Identification:** Our primary audience includes Lego enthusiasts, collectors, and individuals looking for specific rare Lego pieces or figs. We will develop detailed buyer personas to help us understand and cater to our customers' needs effectively.
+
+2. **Online Advertising:** We will leverage targeted social media advertisements and Google Ads. These platforms allow us to target ads based on interests (e.g., interest in Legos, collectibles), enhancing our ad's effectiveness.
+
+3. **Content Marketing:** We will establish a blog on our website that shares interesting information about the Lego universe, collecting tips, rare piece features, and other relevant content. This will not only boost our SEO efforts but also position Brickyard as a trusted resource in the Lego community.
+
+4. **Email Marketing:** Customers will be encouraged to sign up for newsletters when they visit our website. We can then use email marketing to keep our customers informed about new product arrivals, special promotions, and other updates.
+
+5. **Partnerships and Collaborations:** We can partner with popular Lego influencers on platforms like Pinterest, YouTube or Instagram. They can feature our products, unbox them, or use them in a build, exposing our shop to their followers.
+
+6. **SEO Strategy:** Optimize our website and product listings with relevant keywords to ensure we appear in search engine results when customers are looking for specific Lego pieces or collectibles.
 
 
 # UX design
@@ -63,6 +84,58 @@ This is the checkout page. This page are mising som staf on the ux disign.
 <img width="773" alt="image" src="https://github.com/MFLind/Brickyard/assets/106115510/9eb267eb-4562-4521-b3fa-f55fdc3708a7">
 
 This is the page that comes up when you have a 404 error.
+
+# User Stories
+
+## User Story: Browsing the Product Catalog
+1.	Story for Browsing the Product Catalog
+The customer should be able to browse various Lego sets by theme, age group, and price range.
+**Acceptance Criteria:**
+-	User can filter Lego sets by theme, age group, and price.
+-	User can sort Lego sets by popularity, new releases, and price.
+-	User can see product details like the name, price, picture, and age recommendation.
+2.	Story for Adding Products to the Shopping Cart
+The customer should be able to add Lego sets to my shopping cart,
+So that they can collect all desired sets in one place before checkout.
+**Acceptance Criteria:**
+-	User can add a Lego set to the cart from the product detail page.
+-	User can view the number of items in the cart.
+-	User can view a summary of the items added to the cart.
+3.	Story for Checking Out and Making a Purchase
+The customer should be able to check out smoothly and securely,
+So that they can confidently make a purchase.
+**Acceptance Criteria:**
+-	User can view a detailed breakdown of the cart total, including taxes and shipping charges.
+-	User can enter shipping and billing information.
+-	User can choose a payment method and complete the payment.
+-	User receives a confirmation of the purchase via on-screen message and email.
+4.	Story for Writing and Viewing Reviews
+The customer should be able to read and write reviews about Lego sets,
+So that they can make informed purchasing decisions and share my experience with others.
+**Acceptance Criteria:**
+-	User can view reviews on the product detail page.
+-	User can write a review, giving a star rating and leaving a comment.
+-	User can view their own reviews in their account.
+5.	Story for Creating and Managing an Account
+The customer should be able to create an account,
+So that they can save my shipping information and track my orders.
+**Acceptance Criteria:**
+-	User can create an account with their email.
+-	User can log in and out of their account.
+-	User can update their shipping and billing information.
+-	User can view their past purchases and track their current orders.
+
+## Story for Adding to and Managing a Wishlist
+The customer should be able to add Lego sets to my wishlist and manage it,
+So that I can save sets I'm interested in for future consideration or purchase.
+**Acceptance Criteria:**
+-	User can add a Lego set to their wishlist from the product detail page.
+-	User can view all items in their wishlist.
+-	User can remove items from their wishlist.
+-	User can move or add items from their wishlist directly to their shopping cart.
+-	User can share their wishlist via email or social media.
+
+
 
 # Differant view on the website.
 From the UX design work I create by hand all the webpages in product (from experience the export functions in Figma isn't perfect, also got information about that from expert UX designer that my employer is using for their products).
@@ -164,18 +237,24 @@ Deploying via Heroku and setting up ElefantSQL.
 - Add Buildpackage: heroku/python
 
 Setup up propery parameters for the services:
+`
 SECRET_KEY=""
 STRIPE_PUBLIC_KEY=""
 STRIPE_SECRET_KEY=""
 STRIPE_WH_SECRET=""
 MAILCHIMP_API_KEY = ""
 MAILCHIMP_REGION = ""
+MAILCHIMP_MARKETING_AUDIENCE_ID = ""
 CLOUD_NAME=""
 API_KEY=""
 API_SECRET=""
 EMAIL_HOST_USER=""
 EMAIL_HOST_PASSWORD=""
-O365_MAIL_TENANT_ID=""
+SENDER_EMAIL=""
+MAILGUN_DOMAIN=""
+MAILGUN_API_URL=""
+
+`
 
 # Credits
 - Special thanks to Patrik Lindergren and Quagga Technologies AB for sponsering with Heroku and Figma account.
