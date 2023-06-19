@@ -146,7 +146,7 @@ So that I can save sets I'm interested in for future consideration or purchase.
 # Differant view on the website.
 From the UX design work I create by hand all the webpages in product (from experience the export functions in Figma isn't perfect, also got information about that from expert UX designer that my employer is using for their products).
 
-The resulting real pages in BrickYard (www.brickyard.se):
+The resulting real pages in BrickYard (https://brickyard.herokuapp.com / www.brickyard.se):
 
 ![image](https://github.com/MFLind/Brickyard/assets/106115510/dc245c5a-b33c-4ce6-b892-f7194723513a)
 This is the home page. On here you can read litel about what BrickYard are. 
@@ -167,10 +167,20 @@ This is the loggin page. Hear can you login to you accont.
 Signup page for mailing list, using Mailchimp in backend side.
 
 # Features
-- Managed product handling via super user login for adding, edit and delete products.
-- Martketing support via Mailchimp for mailing list
-- Customer login for handling profiles and checkout
-- Checkout via Stripe
+
+The main functionalities for the Brickyard webshop platform is to provide a nice and easy interface for customer to read about products. Place in shopping basket and checkout to order products.
+
+It possible to register and login as customer and a seperate Role for superuser.
+
+Super user can add, edit and delete products in product register. Each product can have image and prices. 
+
+User that has logged in for its account can add products to their wishlist.
+
+Martketing support via Mailchimp for mailing list
+
+Customer login for handling profiles and checkout
+
+When placing a order, products get added to shopping basket, for Checkout is done Stripe payment service and verification emails are sent for order confirmation.
 
 ## Future improvement
 - Handle product stock and warehousing
@@ -214,14 +224,13 @@ The production enviroment is for final testing and system setup.
 - Django 4.1.6 - Used for backend and data model management and web rendering
 - Stripe - Payment checkout service 
 - Cloudinary - Storing and manage static files and media files
-- Bootstrap 5.0 - Frontend 
-- CSS
+- Bootstrap 5.0 - Frontend templates for create CSS and design easy
 - Django allauth - for user management
 - AnyMail - for interface mail sending
 
 
 
-# Testing
+# Testing and Validation
 
 The testing was conducting in several steps, the first level of verification is done in code validation and formatting by using Black formatter in Visual Code and also in command line. 
 
@@ -256,16 +265,12 @@ When running Pylint it insist to complain about having field_name tuple in below
 
 Scoring might related to my color choice, the color choice is made on purpose to reflect the retro Lego colors.
 
-## Bugs
+# Bugs
 The development was done iterative and testing and finding bugs occure during the coding process.
 
 ## Remaining bugs
-- Some Pylint issues still exists.
 - Image resizing via Cloudinary is required for the shop.
 
-## Validator Testing
-- PEP8 via pylint locally on my computer
-- Black locally on my computer
 
 ## Deployment
 Deploying via Heroku and setting up ElefantSQL.
