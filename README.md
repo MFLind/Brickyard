@@ -455,6 +455,7 @@ Start by login to Heroku (create a new account if needed).
 16. Under Settings tab click on "Reveal Config Vars", that will show the enviroment parameters, here paramenters for all the api need to be added with proper values
 ![](docs/images/heroku_12.png)
 17. The Enviroments parameters to be added are as in env_template but according to table below:
+
 | Module | Description |  Source | 
 | --- | --- | --- |
 | PRODUCTION | Set the value to 1 to force PRODUCTION mode | Handwritten in Heroku |
