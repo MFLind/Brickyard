@@ -190,8 +190,7 @@ When placing a order, products get added to shopping basket, for Checkout is don
 # Data model
 Datamodel is implemented with Django framework.
 
-![MicrosoftTeams-image (22)](https://github.com/MFLind/Brickyard/assets/106115510/4d3a98f3-227b-4d66-8e10-d056cbc60ada)
-
+![](docs/images/datamodel.png)
   
  # Social media
   I have created Pintrest (@brickyard_lego_store) and Instagram (@brickyard_lego_store) account for BrickYard, these social networks are the primary channel for BrickYards customers.
