@@ -334,52 +334,34 @@ Google Chrome Lighthouse verification been done using Chrome and inspector view 
 
 ## Manual test case
 
-*** More to be documented ***
+Functional and manual testing has been done of the Brickyard platform according to testplan below.
 
-- Registering new user
-- Add products to basket and conclude purchase
-- Add, edit and delete products
+| Test No. | Description | Expected result | Test OK | 
+| --- | --- | --- | --- |
+| 1. | Open main page of Brickyardd | Page loading with all the content | PASS |
+| 2. | Click on Navbar to select about us | Page loading About us page | PASS |
+| 3. | Testing different screen sizes | Reactive results of pages | PASS |
+| 4. | Use Search bar to search for different products | Product listing with correct search result | PASS |
+| 5. | Click on "Subscribe to mailing list" and enter email to subscribe | validate in Mailchimp that account is added | PASS |
+| 6. | Click on "Unsubscribe to mailing list" and enter email to unsubscribe | validate in Mailchimp that account is removed | PASS |
+| 7. | Click on "Parts" and all parts to show all parts listing | Validate page that they are correct | PASS |
+| 8. | Add several parts to shopping basket | Validate that sum is correct and go to shopping basket to see products | PASS |
+| 9. | Remove products from shopping basket and change amount | Validate that remove and count is changing correct | PASS |
+| 10. | Do a checkout buy of products in basket | Validate that testing credit card and order confirmation on mail works | PASS |
+| 11. | Login as superuser / admin and add, delete and update products | Validate that function for product management works | PASS |
 
-Testing with Stripe test according:
-Testing interactively
+
+### Notes
+
+***Stripe and checkout testing***
+
+When testing the checkout and Stripe there is from Strip a example creditcard according to:
+
 When testing interactively, use a card number, such as 4242 4242 4242 4242. Enter the card number in the Dashboard or in any payment form.
 Use a valid future date, such as 12/34.
 Use any three-digit CVC (four digits for American Express cards).
 Use any value you like for other form fields.
 
-Objective: <what's the purpose of the test>
-
-**Environment**
-
-* <codebase and database>
-
-**Pre-conditions**
-
-# <environment setup>
-# <any tests that need to be run first>
-
-**Direct URL(s)**
-
-# <URLs that will be used in the test steps>
-
-**Input data**
-
-# <some sort of title>
-#* <data>
-
-**Prerequisites**
-
-# <instructions for setting up test>
-
-**Instructions**
-
-| Step No. | Step description |  Expected result |
-| --- | --- | --- |
-| 1. | <what a tester should do> | <what a tester should see when they do that> |
-
-**Notes**
-
-* <any notes>
 
 ## Automatic testing
 Automatic testing has been built in to Brickyard codebase using Django-pytest framework.
