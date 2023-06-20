@@ -205,12 +205,50 @@ Datamodel is implemented with Django framework.
 In the Brickyard project different components and tools has been used for design, development and deployment.
 
 ## Development environment
+The developement environment is based on Visual Code hosting via GitPod and some other tools according to below.
+
 The development environment consist of:
 1. GitHub - Source control, project management and wikipage
 2. Figma - Web based UX design tool for creating prototype look and UX design
 3. GitPod - Web based Visual Code (also remote use of Visual code), development server and staging environment
 4. Visual Code - Development IDE for writing and remote work against Gitpod servers
 5. responsively-app - Open Source tool for check resposive web pages better than AmIResponsive (https://github.com/responsively-org/responsively-app)
+
+**Setup of development setup**
+1. Checkout project via GitPOD button on Github.
+2. Install all needed python packages from requirement file
+'''
+pip install -r requirements.txt
+'''
+3. Create a ".env" based on template file in repo "env_template" and setup all the key values to proper servers
+```
+SECRET_KEY=""
+STRIPE_PUBLIC_KEY=""
+STRIPE_SECRET_KEY=""
+STRIPE_WH_SECRET=""
+MAILCHIMP_API_KEY = ""
+MAILCHIMP_REGION = ""
+MAILCHIMP_MARKETING_AUDIENCE_ID = ""
+CLOUD_NAME=""
+API_KEY=""
+API_SECRET=""
+EMAIL_HOST_USER=""
+EMAIL_HOST_PASSWORD=""
+SENDER_EMAIL=""
+MAILGUN_DOMAIN=""
+MAILGUN_API_URL=""
+
+```
+
+4. If needed run "makemigrations" and "migrate" on django project
+'''
+python manage.py makemigrations
+python manage.py migrate
+'''
+5. Ready to run development server
+'''
+python manage.py runserver
+'''
 
 ## Production environment
 The production enviroment is for final testing and system setup.
@@ -294,8 +332,6 @@ Google Chrome Lighthouse verification been done using Chrome and inspector view 
 
 
 
-
-
 ## Manual test case
 
 *** More to be documented ***
@@ -356,7 +392,7 @@ python manage.py test wishlist
 
 The main component for testings for the following modules and tests:
 | Module | Description |  Expected result | Result |
-| ------------- |:-------------:| -----:|
+| ------------- |:-------------:| -----:|-----:|
 | Product | TBD| TDB | |
 | Wishlist | TBD | TDB | |
 
@@ -371,11 +407,35 @@ The development was done iterative and testing and finding bugs occure during th
 
 
 ## Deployment
-Deploying via Heroku and setting up ElefantSQL.
-- Create a new App in Heroku
+
+The production environment using Heroku as app server with additional plugins and hosting Postegresql database on ElefantSQL.
+
+** ElefantSQL setup **
+Start by setting up new SQL server
+
+1. Create a new account if needed
+2. Click on creating a new instance
+![](docs/images/elefantsql_1.png)
+3. Fill in name for new instance
+![](docs/images/elefantsql_2.png)
+4. Select region for server (Brickyard run servers in Nordics)
+![](docs/images/elefantsql_3.png)
+5. Confirm creation and you back to list of instances
+![](docs/images/elefantsql_4.png)
+6. Go in the newly create instance and copy the Database URL, its needed to environment variables i Heroko
+![](docs/images/elefantsql_5.png)
+
+** Heroku setup
+Start by login to Heroku (create a new account if needed).
+
+
+1. Create a new App in Heroku
+![](docs/images/heroku_1.png)
+
 - Link to Brickyard repository in Github
 - Add plugin Mailgun for mail service
 - Add Buildpackage: heroku/python
+
 
 Setup up propery parameters for the services:
 ```
