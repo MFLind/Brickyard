@@ -232,7 +232,7 @@ MAILCHIMP_MARKETING_AUDIENCE_ID = ""
 CLOUD_NAME=""
 API_KEY=""
 API_SECRET=""
-EMAIL_HOST_USER=""
+MAILGUN_DOMAIN_USER=""
 EMAIL_HOST_PASSWORD=""
 SENDER_EMAIL=""
 MAILGUN_DOMAIN=""
@@ -410,7 +410,7 @@ The development was done iterative and testing and finding bugs occure during th
 
 The production environment using Heroku as app server with additional plugins and hosting Postegresql database on ElefantSQL.
 
-** ElefantSQL setup **
+**ElefantSQL setup**
 Start by setting up new SQL server
 
 1. Create a new account if needed
@@ -425,37 +425,76 @@ Start by setting up new SQL server
 6. Go in the newly create instance and copy the Database URL, its needed to environment variables i Heroko
 ![](docs/images/elefantsql_5.png)
 
-** Heroku setup
+**Heroku setup**
 Start by login to Heroku (create a new account if needed).
-
 
 1. Create a new App in Heroku
 ![](docs/images/heroku_1.png)
+2. Select name of the app instance and region (Brickyard run in Europe region)
+![](docs/images/heroku_2.png)
+3. Press "Create app" and you will come to the App page and tab for Deployment
+4. Choose Github (Connect to GitHub) button
+![](docs/images/heroku_3.png)
+5. Connect to the Brickyard Github repo and search for it to link it
+![](docs/images/heroku_4.png)
+6. Go to tab "Resources"
+![](docs/images/heroku_6.png)
+7. Look for plugin "Mailgun" and choose that one
+![](docs/images/heroku_7.png)
+8. Choose the "Submit Order form"
+9. Follow the process in Mailgun page and get the domain attenticated
+10. Get API keys for Mail and env values
+11. In Heroko and our Brickyard app, go to Settings tab
+![](docs/images/heroku_8.png)
+12. Click on "Add buildpack"
+13. Choose heroku/python and press "Add buildpack"
+![](docs/images/heroku_10.png)
+14. Under Settings tab click on "Configure SSL" and select "Automatic Certificate Management (ACM)"
+![](docs/images/heroku_11.png)
+15. Press "Next" and SSL certifcate will be setup
+16. Under Settings tab click on "Reveal Config Vars", that will show the enviroment parameters, here paramenters for all the api need to be added with proper values
+![](docs/images/heroku_12.png)
+17. The Enviroments parameters to be added are as in env_template but according to table below:
+| Module | Description |  Source | 
+| ------------- |:-------------:| -----:|
+| PRODUCTION | Set the value to 1 to force PRODUCTION mode | Handwritten in Heroku |
+| SECRET_KEY | Django Secret key for database salt | Django inital setup |
+| DATABASE_URL | Database URL for SQL server | ElephantSQL |
+| STRIPE_PUBLIC_KEY | Stripe Public key value for API | Stripe |
+| STRIPE_SECRET_KEY | Stripe Secret key value for API | Stripe |
+| STRIPE_WH_SECRET | Stripe webhook secret key | Stripe |
+| MAILCHIMP_API_KEY | Mailchimp API key | Mailchimp |
+| MAILCHIMP_REGION | Mailchimp region | Mailchimp |
+| MAILCHIMP_MARKETING_AUDIENCE_ID | Mailchimp Marketing audience ID | Mailchimp |
+| CLOUD_NAME | Cloudinary Cloud name | Cloudinary |
+| API_KEY | Cloudinary API Key | Cloudinary |
+| API_SECRET | Cloudinary secret | Cloudinary |
+| SENDER_EMAIL | Email that system uses to send from | self defined |
+| MAILGUN_API_KEY | Mailgun API key | Mailgun |
+| MAILGUN_API_URL |  Mailgun API URL key | Mailgun |
+| MAILGUN_DOMAIN |  Mailgun domain key | Mailgun |
+| MAILGUN_HOST |  Mailgun host key | Mailgun |
+| MAILGUN_PUBLIC_KEY |  Mailgun Public key | Mailgun |
+| MAILGUN_SMTP_LOGIN |  Mailgun SMTP login user | Mailgun |
+| MAILGUN_SMTP_PASSWORD |  Mailgun SMTP password | Mailgun |
+| MAILGUN_SMTP_PORT |  Mailgun SMTP port | Mailgun |
+| MAILGUN_SMTP_SERVER |  Mailgun SMTP server | Mailgun |
 
-- Link to Brickyard repository in Github
-- Add plugin Mailgun for mail service
-- Add Buildpackage: heroku/python
+18. Go to tab "Deploy" and select manual build for first deployment
+![](docs/images/heroku_13.png)
+
+**Stripe setup**
+Start by creating account and select Stripe Connect service.
+
+1. Choose Developer and Test mode
+2. Go to tab API-key and get the keys for environment settings
+3. Go to tab "Webhooks" to setup webhook for Heroku endpoint
+![](docs/images/stripe_1.png)
 
 
-Setup up propery parameters for the services:
-```
-SECRET_KEY=""
-STRIPE_PUBLIC_KEY=""
-STRIPE_SECRET_KEY=""
-STRIPE_WH_SECRET=""
-MAILCHIMP_API_KEY = ""
-MAILCHIMP_REGION = ""
-MAILCHIMP_MARKETING_AUDIENCE_ID = ""
-CLOUD_NAME=""
-API_KEY=""
-API_SECRET=""
-EMAIL_HOST_USER=""
-EMAIL_HOST_PASSWORD=""
-SENDER_EMAIL=""
-MAILGUN_DOMAIN=""
-MAILGUN_API_URL=""
+**Mailchimp setup**
+Start by creating account and select Mailchimp.
 
-```
 
 # Credits
 - Special thanks to Patrik Lindergren and Quagga Technologies AB for sponsering with Heroku and Figma account.
