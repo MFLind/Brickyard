@@ -56,6 +56,10 @@ We already have bought several lots of Lego over 100 kg (buying in bulk), for ex
 
 6. **SEO Strategy:** Optimize our website and product listings with relevant keywords to ensure we appear in search engine results when customers are looking for specific Lego pieces or collectibles.
 
+# Agile project management
+
+During the project I have been using Github project function with a Agile board:
+![](docs/images/agile.png)
 
 # UX design
 During the project UX design where done in Figma as tool for concept and prototyping. 
