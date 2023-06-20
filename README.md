@@ -374,7 +374,7 @@ Objective: <what's the purpose of the test>
 **Instructions**
 
 | Step No. | Step description |  Expected result |
-| ------------- |:-------------:| -----:|
+|--- | --- |--- |
 | 1. | <what a tester should do> | <what a tester should see when they do that> |
 
 **Notes**
@@ -392,7 +392,7 @@ python manage.py test wishlist
 
 The main component for testings for the following modules and tests:
 | Module | Description |  Expected result | Result |
-| ------------- |------------| -----|-----|
+|--- | --- |--- |--- |--- |
 | Product | TBD| TDB | |
 | Wishlist | TBD | TDB | |
 
@@ -456,7 +456,7 @@ Start by login to Heroku (create a new account if needed).
 ![](docs/images/heroku_12.png)
 17. The Enviroments parameters to be added are as in env_template but according to table below:
 | Module | Description |  Source | 
-| ------------- |-------------| -----|
+|--- | --- |--- |
 | PRODUCTION | Set the value to 1 to force PRODUCTION mode | Handwritten in Heroku |
 | SECRET_KEY | Django Secret key for database salt | Django inital setup |
 | DATABASE_URL | Database URL for SQL server | ElephantSQL |
