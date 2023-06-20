@@ -210,6 +210,7 @@ The development environment consist of:
 2. Figma - Web based UX design tool for creating prototype look and UX design
 3. GitPod - Web based Visual Code (also remote use of Visual code), development server and staging environment
 4. Visual Code - Development IDE for writing and remote work against Gitpod servers
+5. responsively-app - Open Source tool for check resposive web pages better than AmIResponsive (https://github.com/responsively-org/responsively-app)
 
 ## Production environment
 The production enviroment is for final testing and system setup.
@@ -227,17 +228,76 @@ The production enviroment is for final testing and system setup.
 - Bootstrap 5.0 - Frontend templates for create CSS and design easy
 - Django allauth - for user management
 - AnyMail - for interface mail sending
+- Pylint - Validation of PEP8 coding style (https://www.pylint.org/)
+- Black - Python code formatter (https://github.com/psf/black)
+- Pytest - Automatic testing (https://docs.pytest.org/en/7.3.x/)
 
 
 
 # Testing and Validation
 
-The testing was conducting in several steps, the first level of verification is done in code validation and formatting by using Black formatter in Visual Code and also in command line. 
+Validation and testing of Brickyard project has been done continuesly during the development, but in a structured way.
 
-I have done manual testing with the following methods:
-- Running thru pylint for PEP8 validation, some warning exists but most are cleaned up.
-- Running Black (https://github.com/psf/black) to validate coding style and format
-- Validation of different operating systems and browsers to validate compability
+Validation been using different tools like Black and pylint.
+
+Part of functionaly testing validation of different browsers and screen setup has been done.
+
+
+## Validation
+First level of verification is done in code validation and formatting by using Black formatter in Visual Code and also in command line. 
+
+Second level of validation is done via using Pylint to validate coding and formatting error according to PEP8.
+
+**Black**
+Running Black (https://github.com/psf/black) to validate coding style and format, Black formatter is quite uncompromising and make code clearer and actually run faster.
+
+All the code modules been run via Black formatter before running pylint.
+
+**Pylint**
+Pylint is runned in background of Visual and gives warning continuesly, where I have fixed and modified to comply with PEP8.
+
+Most of the reported issues has been fixed, some constributed code has some details that are kept.
+
+## Responsively App
+The desktop app "responsively-app" is Open Source tool for check resposive web pages, which function better than AmIResponsive.
+
+BrickYard webpage been validatate via that app.
+![responsively-app](https://github.com/MFLind/Brickyard/docs/images/responsivityapp.png)
+
+## Browser and platform testing
+
+Validation of different operating systems and browsers to validate compability has been using devices like:
+![rmacbook1_about](https://github.com/MFLind/Brickyard/docs/images/macbook1_about.png)
+
+- Macbook PRO 16" - Mac OS Sonoma
+    - Safari Version 17.0 (19616.1.14.11.11)
+    - Firefox Version 114.0.1
+    - Chrome Version 114.0.5735.106 (Officiell version) (arm64)
+- iPhone Pro Max 14 - iOS 17 beta
+    - Safari
+    - Chrome
+
+Screenshot from iPhone Pro Max 14:
+![ios_safari](https://github.com/MFLind/Brickyard/docs/images/ios_safari.png)
+
+Screenshot from Macbook Chrome:
+![chrome_screenshot](https://github.com/MFLind/Brickyard/docs/images/chrome_screenshot.png)
+
+
+## Google Chrome Lighthouse 
+
+Google Chrome Lighthouse verification been done using Chrome and inspector view with lighthouse.
+
+<img width="579" alt="image" src="https://github.com/MFLind/Brickyard/assets/106115510/b2efc4b1-ebf9-4978-8ae4-031b29f9a738">
+
+
+
+
+
+## Manual test case
+
+*** More to be documented ***
+
 - Registering new user
 - Add products to basket and conclude purchase
 - Add, edit and delete products
@@ -249,21 +309,57 @@ Use a valid future date, such as 12/34.
 Use any three-digit CVC (four digits for American Express cards).
 Use any value you like for other form fields.
 
-When running Pylint it insist to complain about having field_name tuple in below to be remove, that breaks the code.
-    def __init__(self, *args, **kwargs):
-        """ Constructor for product form """
-        super().__init__(*args, **kwargs)
-        categories = Category.objects.all()
-        friendly_names = [(c.id, c.get_friendly_name()) for c in categories]
+Objective: <what's the purpose of the test>
 
-        self.fields["category"].choices = friendly_names
-        for field_name, field in self.fields.items():
-            field.widget.attrs["class"] = "border-black rounded-0"
+**Environment**
+
+* <codebase and database>
+
+**Pre-conditions**
+
+# <environment setup>
+# <any tests that need to be run first>
+
+**Direct URL(s)**
+
+# <URLs that will be used in the test steps>
+
+**Input data**
+
+# <some sort of title>
+#* <data>
+
+**Prerequisites**
+
+# <instructions for setting up test>
+
+**Instructions**
+
+| Step No. | Step description |  Expected result |
+| ------------- |:-------------:| -----:|
+| 1. | <what a tester should do> | <what a tester should see when they do that> |
+
+**Notes**
+
+* <any notes>
+
+## Automatic testing
+Automatic testing has been built in to Brickyard codebase using Django-pytest framework.
+
+To execute the testing according to:
+```
+python manage.py test product
+python manage.py test wishlist
+```
+
+The main component for testings for the following modules and tests:
+| Module | Description |  Expected result | Result |
+| ------------- |:-------------:| -----:|
+| Product | TBD| TDB | |
+| Wishlist | TBD | TDB | |
 
 
-<img width="579" alt="image" src="https://github.com/MFLind/Brickyard/assets/106115510/b2efc4b1-ebf9-4978-8ae4-031b29f9a738">
 
-Scoring might related to my color choice, the color choice is made on purpose to reflect the retro Lego colors.
 
 # Bugs
 The development was done iterative and testing and finding bugs occure during the coding process.
