@@ -375,14 +375,12 @@ Automatic testing has been built in to Brickyard codebase using Django-pytest fr
 To execute the testing according to:
 ```
 python manage.py test product
-python manage.py test wishlist
 ```
 
 The main component for testings for the following modules and tests:
 | Module | Description |  Expected result | Result |
 | --- | --- | --- | --- |
-| Product | TBD| TDB | |
-| Wishlist | TBD | TDB | |
+| Product | Insert categories and products in database | Verifies that insert and look it up | PASS |
 
 
 
