@@ -491,10 +491,10 @@ Start by creating account and select Stripe Connect service.
 3. Go to tab "Webhooks" to setup webhook for Heroku endpoint
 ![](docs/images/stripe_1.png)
 
-
 **Mailchimp setup**
 Start by creating account and select Mailchimp.
 
+Create a compain and get the API keys and ccompain numbers for API values in Environment variables.
 
 # Credits
 - Special thanks to Patrik Lindergren and Quagga Technologies AB for sponsering with Heroku and Figma account.
