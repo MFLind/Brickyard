@@ -262,12 +262,13 @@ Most of the reported issues has been fixed, some constributed code has some deta
 The desktop app "responsively-app" is Open Source tool for check resposive web pages, which function better than AmIResponsive.
 
 BrickYard webpage been validatate via that app.
-![responsively-app](https://github.com/MFLind/Brickyard/docs/images/responsivityapp.png)
+<img width="579" alt="responsively" src="https://github.com/MFLind/Brickyard/docs/images/responsivityapp.png">
 
 ## Browser and platform testing
 
 Validation of different operating systems and browsers to validate compability has been using devices like:
-![rmacbook1_about](https://github.com/MFLind/Brickyard/docs/images/macbook1_about.png)
+<img width="579" alt="rmacbook1_about" src="https://github.com/MFLind/Brickyard/docs/images/macbook1_about.png">
+
 
 - Macbook PRO 16" - Mac OS Sonoma
     - Safari Version 17.0 (19616.1.14.11.11)
@@ -278,10 +279,10 @@ Validation of different operating systems and browsers to validate compability h
     - Chrome
 
 Screenshot from iPhone Pro Max 14:
-![ios_safari](https://github.com/MFLind/Brickyard/docs/images/ios_safari.png)
+<img width="579" alt="ios_safari" src="https://github.com/MFLind/Brickyard/docs/images/ios_safari.png">
 
 Screenshot from Macbook Chrome:
-![chrome_screenshot](https://github.com/MFLind/Brickyard/docs/images/chrome_screenshot.png)
+<img width="579" alt="chrome_screenshot" src="https://github.com/MFLind/Brickyard/docs/images/chrome_screenshot.png">
 
 
 ## Google Chrome Lighthouse 
