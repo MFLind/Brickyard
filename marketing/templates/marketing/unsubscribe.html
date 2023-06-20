@@ -18,7 +18,7 @@
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" class="btn btn-danger">Unsubscribe</button>
+        <button type="submit" class="btn btn-danger" aria-label="unsubscribe">Unsubscribe</button>
     </form>
     <p class="mt-2"><a href="{% url "subscribe" %}">Subscribe form</a></p>
 </div>

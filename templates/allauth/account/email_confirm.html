@@ -22,7 +22,7 @@
 
                 <form method="post" action="{% url 'account_confirm_email' confirmation.key %}">
                     {% csrf_token %}
-                    <button type="submit">Confirm</button>
+                    <button type="submit" aria-label="confirm">Confirm</button>
                 </form>
 
                 {% else %}
