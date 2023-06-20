@@ -59,31 +59,29 @@ We already have bought several lots of Lego over 100 kg (buying in bulk), for ex
 
 # UX design
 During the project UX design where done in Figma as tool for concept and prototyping. 
+
 Example of pages from UX design:
 
+This is the home page.
 <img width="901" alt="image" src="https://github.com/MFLind/Brickyard/assets/106115510/5498ab2f-cecd-4f61-9d40-c1bba848f0e0">
 
-This is the home page.
-
+This is the shop page.
 <img width="787" alt="image" src="https://github.com/MFLind/Brickyard/assets/106115510/22cb8852-7c48-4b76-b99c-afc586525eb4">
 
-This is the shop page.
 
+This is the item detail page where you can read more about every item when you have click on it.
 <img width="762" alt="image" src="https://github.com/MFLind/Brickyard/assets/106115510/e6370e7d-25d0-4ec3-b69c-ae13578473f9">
 
-This is the item deatel page where you can read more about every item when you have clickt on it.
-
-<img width="762" alt="image" src="https://github.com/MFLind/Brickyard/assets/106115510/1e843b6d-573a-45c2-804b-964080d1e660">
 
 This is the about us page and on this page you have the information to contact us with.
+<img width="762" alt="image" src="https://github.com/MFLind/Brickyard/assets/106115510/1e843b6d-573a-45c2-804b-964080d1e660">
 
+This is the checkout page. This page are missing some stuff on the UX design. 
 <img width="853" alt="image" src="https://github.com/MFLind/Brickyard/assets/106115510/a63a65b5-c2a1-46c0-86da-131f84838dd3">
 
-This is the checkout page. This page are mising som staf on the ux disign. 
-
+This is the page that comes up when you have a 404 error.
 <img width="773" alt="image" src="https://github.com/MFLind/Brickyard/assets/106115510/9eb267eb-4562-4521-b3fa-f55fdc3708a7">
 
-This is the page that comes up when you have a 404 error.
 
 # User Stories
 
@@ -142,7 +140,6 @@ So that I can save sets I'm interested in for future consideration or purchase.
 -	User can share their wishlist via email or social media.
 
 
-
 # Differant view on the website.
 From the UX design work I create by hand all the webpages in product (from experience the export functions in Figma isn't perfect, also got information about that from expert UX designer that my employer is using for their products).
 
@@ -182,13 +179,18 @@ Customer login for handling profiles and checkout
 
 When placing a order, products get added to shopping basket, for Checkout is done Stripe payment service and verification emails are sent for order confirmation.
 
+When user is logged in to Brickyard they can add products to a Wishlist, where user can easy then get to product detail page.
+If user not logged in and view a product details and press "Add to wishlist" then user is requested to login.
+
+
 ## Future improvement
 - Handle product stock and warehousing
-- Enable bought TLS/SSL certificate of the Heroko service
+- Enable bought TLS/SSL certificate of the Heroku service and use brickyard.se domain fully
+- Image resizing via Cloudinary is required for the shop.
 - My own step in development is to study and learn React (and also React Native), so my goal is to change frontend code to React Frontend.
 
 # Data model
-Datamodel is implemented with Django framework.
+Datamodel is implemented with Django framework and custom database has been added for wishlist and some more items.
 
 ![](docs/images/datamodel.png)
   
@@ -228,16 +230,22 @@ STRIPE_WH_SECRET=""
 MAILCHIMP_API_KEY = ""
 MAILCHIMP_REGION = ""
 MAILCHIMP_MARKETING_AUDIENCE_ID = ""
+DATABASE_URL=""
 CLOUD_NAME=""
 API_KEY=""
 API_SECRET=""
-MAILGUN_DOMAIN_USER=""
-EMAIL_HOST_PASSWORD=""
-SENDER_EMAIL=""
+MAILGUN_SMTP_SERVER=””
+MAILGUN_SMTP_PORT=""
+MAILGUN_SMTP_LOGIN=””
+MAILGUN_SMTP_PASSWORD=””
+MAILGUN_API_KEY=""
 MAILGUN_DOMAIN=""
+SENDER_EMAIL=""
 MAILGUN_API_URL=""
 
 ```
+
+For description on parameters see under Deployment section the table.
 
 4. If needed run "makemigrations" and "migrate" on django project
 '''
@@ -330,7 +338,6 @@ Google Chrome Lighthouse verification been done using Chrome and inspector view 
 
 
 
-
 ## Manual test case
 
 Functional and manual testing has been done of the Brickyard platform according to testplan below.
@@ -348,7 +355,7 @@ Functional and manual testing has been done of the Brickyard platform according 
 | 9. | Remove products from shopping basket and change amount | Validate that remove and count is changing correct | PASS |
 | 10. | Do a checkout buy of products in basket | Validate that testing credit card and order confirmation on mail works | PASS |
 | 11. | Login as superuser / admin and add, delete and update products | Validate that function for product management works | PASS |
-
+| 12. | Under product details add product to wishlist | Validate that wishlist can add, delete and go to product details | PASS |
 
 ### Notes
 
@@ -384,8 +391,7 @@ The main component for testings for the following modules and tests:
 The development was done iterative and testing and finding bugs occure during the coding process.
 
 ## Remaining bugs
-- Image resizing via Cloudinary is required for the shop.
-
+- No known bugs
 
 ## Deployment
 
