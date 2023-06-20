@@ -148,23 +148,23 @@ From the UX design work I create by hand all the webpages in product (from exper
 
 The resulting real pages in BrickYard (https://brickyard.herokuapp.com / www.brickyard.se):
 
-![image](https://github.com/MFLind/Brickyard/assets/106115510/dc245c5a-b33c-4ce6-b892-f7194723513a)
 This is the home page. On here you can read litel about what BrickYard are. 
+![](docs/images/by_1.png)
 
-<img width="1325" alt="image" src="https://github.com/MFLind/Brickyard/assets/106115510/68d532a9-6414-4390-85a7-6b31300bcd21">
 This is a view of the store page.
+<img width="1325" alt="image" src="https://github.com/MFLind/Brickyard/assets/106115510/68d532a9-6414-4390-85a7-6b31300bcd21">
 
-![image](https://github.com/MFLind/Brickyard/assets/106115510/2f9bb412-3c92-438a-bb4c-0408685fc816)
-This is the abut us page. On hear you can read about us and contact us. You can also subscribe so you can gate emails when new praducts comms up.
+This is the about us page. Here you can read about us and contact us. You can also subscribe so you can get emails when new products comming up.
+![](docs/images/by_2.png)
 
-![image](https://github.com/MFLind/Brickyard/assets/106115510/2ed9ef43-1048-4781-887a-4ef1cc5945ce)
-This is the shoping basket. On hear you can se all your products you have shos to by.
+This is the shopping basket. Here you can se all your products you have added to shopping baskets.
+![](docs/images/by_3.png)
 
-![image](https://github.com/MFLind/Brickyard/assets/106115510/1c9f81ef-1414-4acd-8b74-6f3791daa862)
-This is the loggin page. Hear can you login to you accont.
+This is the Signup for new account page.
+![](docs/images/by_4.png)
 
-<img width="1325" alt="image" src="https://github.com/MFLind/Brickyard/assets/106115510/b3330299-d67f-4631-b9ad-deba29420150">
 Signup page for mailing list, using Mailchimp in backend side.
+![](docs/images/by_5.png)
 
 # Features
 
