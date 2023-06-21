@@ -7,8 +7,6 @@ class GalleryAdmin(admin.ModelAdmin):
     """ Product Admin Model """
     list_display = (
         "name",
-        "category",
-        "price",
         "image",
     )
 

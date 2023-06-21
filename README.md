@@ -186,6 +186,8 @@ When placing a order, products get added to shopping basket, for Checkout is don
 When user is logged in to Brickyard they can add products to a Wishlist, where user can easy then get to product detail page.
 If user not logged in and view a product details and press "Add to wishlist" then user is requested to login.
 
+Gallery for exciting builds and sets, that store image and description for example builds.
+
 
 ## Future improvement
 - Handle product stock and warehousing
@@ -360,6 +362,7 @@ Functional and manual testing has been done of the Brickyard platform according 
 | 10. | Do a checkout buy of products in basket | Validate that testing credit card and order confirmation on mail works | PASS |
 | 11. | Login as superuser / admin and add, delete and update products | Validate that function for product management works | PASS |
 | 12. | Under product details add product to wishlist | Validate that wishlist can add, delete and go to product details | PASS |
+| 13. | View, add, edit and delete Gallery | Validate it possible to see gallery, add, edit and delete items | PASS |
 
 ### Notes
 

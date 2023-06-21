@@ -1,80 +1,95 @@
 """ Views for Gallery """
-import logging
-import hashlib
-from django.http import JsonResponse
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from Brickyard import settings
+from django.contrib import messages
+from django.contrib.auth.decorators import login_required
+from django.db.models import Q
+from django.db.models.functions import Lower
 
-from products.models import Product
-from profiles.models import UserProfile
-from .models import WishLineItem
-
-logger = logging.getLogger(__name__)
+from .models import GalleryItem
+from .forms import GalleryForm
 
 
 def list_gallery(request):
     """A view that gallery"""
 
-    if request.user.is_authenticated:
-        try:
-            profile = UserProfile.objects.get(user=request.user)
-        except UserProfile.DoesNotExist:
-            return redirect(reverse("account_signup"))
-    else:
-        return redirect(reverse("account_login"))
-
-    wishlist_product_id_list = WishLineItem.objects.filter(user_profile=profile).values_list("product_id", flat=True)
-    wish_items = Product.objects.filter(id__in=list(wishlist_product_id_list))
+    galleryitems = GalleryItem.objects.all()
 
     context = {
-        "wishlist_items": wish_items
+        "galleryitems": galleryitems,
     }
 
     return render(request, "gallery/gallery.html", context)
 
 
-def add_galleryitem(request, product_id):
-    """Add a product to users gallery"""
+@login_required
+def add_galleryitem(request):
+    """Add a Gallery Item to the Gallery"""
+    if not request.user.is_superuser:
+        messages.error(request, "Sorry, only store owners can do that.")
+        return redirect(reverse("home"))
 
-    if request.user.is_authenticated:
-        try:
-            profile = UserProfile.objects.get(user=request.user)
-        except UserProfile.DoesNotExist:
-            return redirect(reverse("account_signup"))
+    if request.method == "POST":
+        form = GalleryForm(request.POST, request.FILES)
+        if form.is_valid():
+            galleryitem = form.save()
+            messages.success(request, "Successfully added Gallery Item!")
+            return redirect(reverse("list_gallery"))
+        messages.error(
+            request,
+            "Failed to add Gallery Item. \
+            Please ensure the form is valid.",
+        )
     else:
-        return redirect(reverse("account_login"))
+        form = GalleryForm()
 
-    product = get_object_or_404(Product, pk=product_id)
-    try:
-        wishitem = WishLineItem.objects.get(user_profile=profile, product=product)
-    except WishLineItem.DoesNotExist:
-        wishitem = None
+    template = "gallery/add_galleryitem.html"
+    context = {
+        "form": form,
+    }
 
-    if not wishitem:
-        wishitem = WishLineItem(user_profile=profile, product=product)
-        wishitem.save()
-
-    return redirect(reverse("list_wishlist"))
+    return render(request, template, context)
 
 
-def delete_galleryitem(request, product_id):
-    """Delete a product from the wishlist"""
+@login_required
+def edit_galleryitem(request, galleryitem_id):
+    """Edit a Gallery Item"""
+    if not request.user.is_superuser:
+        messages.error(request, "Sorry, only store owners can do that.")
+        return redirect(reverse("home"))
 
-    if request.user.is_authenticated:
-        try:
-            profile = UserProfile.objects.get(user=request.user)
-        except UserProfile.DoesNotExist:
-            return redirect(reverse("account_signup"))
+    galleryitem = get_object_or_404(GalleryItem, pk=galleryitem_id)
+    if request.method == "POST":
+        form = GalleryForm(request.POST, request.FILES, instance=galleryitem)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Successfully updated gallery item!")
+            return redirect(reverse("list_gallery"))
+        messages.error(
+            request,
+            "Failed to update gallery item. \
+            Please ensure the form is valid.",
+        )
     else:
-        return redirect(reverse("account_login"))
+        form = GalleryForm(instance=galleryitem)
+        messages.info(request, f"You are editing {galleryitem.name}")
 
-    product = get_object_or_404(Product, pk=product_id)
-    try:
-        wishitem = WishLineItem.objects.get(user_profile=profile, product=product)
-    except WishLineItem.DoesNotExist:
-        wishitem = None
+    template = "gallery/edit_galleryitem.html"
+    context = {
+        "form": form,
+        "galleryitem": galleryitem,
+    }
 
-    if wishitem:
-        wishitem.delete()
+    return render(request, template, context)
 
-    return redirect(reverse("list_wishlist"))
+
+@login_required
+def delete_galleryitem(request, galleryitem_id):
+    """Delete a Gallery Item"""
+    if not request.user.is_superuser:
+        messages.error(request, "Sorry, only store owners can do that.")
+        return redirect(reverse("home"))
+
+    galleryitem = get_object_or_404(GalleryItem, pk=galleryitem_id)
+    galleryitem.delete()
+    messages.success(request, "Gallery Item deleted!")
+    return redirect(reverse("list_gallery"))
