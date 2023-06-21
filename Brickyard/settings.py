@@ -74,6 +74,7 @@ INSTALLED_APPS = [
     "profiles",
     "marketing",
     "wishlist",
+    "gallery",
     # Other
     "anymail",
     "crispy_forms",
