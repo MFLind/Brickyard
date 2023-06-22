@@ -30,6 +30,7 @@ urlpatterns = [
     path("marketing/", include("marketing.urls")),
     path("wishlist/", include("wishlist.urls")),
     path("gallery/", include("gallery.urls")),
+    path("guestbook/", include("guestbook.urls")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = "Brickyardshop.views.error_404_view"

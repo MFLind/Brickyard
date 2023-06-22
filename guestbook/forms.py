@@ -1,14 +1,14 @@
-""" Forms for Gallery """
+""" Forms for Guestbook """
 from django import forms
 from .widgets import CustomClearableFileInput
-from .models import GalleryItem
+from .models import GuestbookItem
 
 
-class GalleryForm(forms.ModelForm):
-    """ Gallery form """
+class GuestbookForm(forms.ModelForm):
+    """ Guestbook form """
     class Meta:
-        """ Meta class for GalleryForm """
-        model = GalleryItem
+        """ Meta class for GuestbookForm """
+        model = GuestbookItem
         fields = ["name", "description", "image"]
 
     image = forms.ImageField(
@@ -16,7 +16,7 @@ class GalleryForm(forms.ModelForm):
     )
 
     def __init__(self, *args, **kwargs):
-        """ Constructor for gallery form """
+        """ Constructor for guestbook form """
         super().__init__(*args, **kwargs)
 
         for field_name, field in self.fields.items():

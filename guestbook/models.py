@@ -1,9 +1,9 @@
-""" Models for Gallery """
+""" Models for Guestbook """
 from django.db import models
 
 
-class GalleryItem(models.Model):
-    """ GalleryItem model """
+class GuestbookItem(models.Model):
+    """ GuestbookItem model """
     name = models.CharField(max_length=254)
     description = models.TextField()
     image_url = models.URLField(max_length=1024, null=True, blank=True)
