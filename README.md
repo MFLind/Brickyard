@@ -196,7 +196,7 @@ Gallery for exciting builds and sets, that store image and description for examp
 - My own step in development is to study and learn React (and also React Native), so my goal is to change frontend code to React Frontend.
 
 # Data model
-Datamodel is implemented with Django framework and custom database has been added for wishlist and some more items.
+Datamodel is implemented with Django framework and custom database has been added for wishlist, gallery and Guestbook.
 
 ![](docs/images/datamodel.png)
   
