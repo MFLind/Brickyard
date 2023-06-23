@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+{% csrf_token %}
+
+<div class="container-fluid">
+    <div class="row h-100 justify-content-center align-items-center m-5">
+        <div class="col">
+            <div class="card" style="width: 24em; background-color: rgba(154, 170, 255, 1);">
+                <div class="card-body">
+                    <h5 class="card-title">Links</h5>
+                    
+                    <p class="card-text">
+                        <a class="text-reset fw-bold" nofollow href="https://swebrick.se/">SweBrick</a>
+                    </p>
+                    <p class="card-text">
+                        <a class="text-reset fw-bold" sponsored href="https://www.lego.com">Lego</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

@@ -21,6 +21,10 @@ def aboutus(request):
     """A view to return the aboutus page"""
     return render(request, "home/aboutus.html")
 
+def links(request):
+    """A view to return the links to friends page"""
+    return render(request, "home/links.html")
+
 
 def error_404_view(request, exception):
     """ 404 - page not found view """
