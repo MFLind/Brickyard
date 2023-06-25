@@ -2,7 +2,7 @@
 
 BrickYard is the webshop for collectable Lego bricks and pieces for Business to Consumer.
 
-<img width="1507" alt="MicrosoftTeams-image (23)" src="https://github.com/MFLind/Brickyard/assets/106115510/433d0c10-c7b6-46a5-b999-7947b5ea18a1">
+![](docs/images/responsivityapp.png)
 
 
 At BrickYard, we are passionate about LEGO and dedicated to bringing you a wide range of LEGO pieces to enhance your building adventures. Whether you're a seasoned LEGO enthusiast or just starting your brick collection, we have something for everyone.
@@ -153,7 +153,7 @@ This is the home page. On here you can read litel about what BrickYard are.
 ![](docs/images/by_1.png)
 
 This is a view of the store page.
-<img width="1325" alt="image" src="https://github.com/MFLind/Brickyard/assets/106115510/68d532a9-6414-4390-85a7-6b31300bcd21">
+![](docs/images/by_6.png)
 
 This is the about us page. Here you can read about us and contact us. You can also subscribe so you can get emails when new products comming up.
 ![](docs/images/by_2.png)
@@ -166,6 +166,13 @@ This is the Signup for new account page.
 
 Signup page for mailing list, using Mailchimp in backend side.
 ![](docs/images/by_5.png)
+
+Gallery view from Lego design by Brickyard.
+![](docs/images/by_7.png)
+
+Link page for Lego friends and affiliates
+![](docs/images/by_8.png)
+
 
 # Features
 
@@ -381,6 +388,11 @@ Use any value you like for other form fields.
 ## Automatic testing
 Automatic testing has been built in to Brickyard codebase using Django-pytest framework.
 
+When running the automatic testing database need to change to local sqlite3 changing environment variable:
+'''
+DATABASE_URL="sqlite:///db.sqlite3"
+'''
+
 To execute the testing according to:
 ```
 python manage.py test product
@@ -390,7 +402,6 @@ The main component for testings for the following modules and tests:
 | Module | Description |  Expected result | Result |
 | --- | --- | --- | --- |
 | Product | Insert categories and products in database | Verifies that insert and look it up | PASS |
-
 
 
 
