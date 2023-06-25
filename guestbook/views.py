@@ -57,7 +57,7 @@ def delete_guestbookitem(request, guestbookitem_id):
         messages.error(request, "Sorry, only store owners can do that.")
         return redirect(reverse("home"))
 
-    guestbookitem = get_object_or_404(guestbookitem, pk=guestbookitem_id)
+    guestbookitem = get_object_or_404(GuestbookItem, pk=guestbookitem_id)
     guestbookitem.delete()
     messages.success(request, "Guestbook Item deleted!")
     return redirect(reverse("list_guestbook"))
