@@ -6,11 +6,11 @@ from .models import WishLineItem
 class WishListAdmin(admin.ModelAdmin):
     """ Wishlist Admin Model """
     list_display = (
-        "name",
-        "image",
+        "user_profile",
+        "product",
     )
 
-    ordering = ("name",)
+    ordering = ("user_profile",)
 
 
-admin.site.register(WishLineItem, guestbook/admin.py)
+admin.site.register(WishLineItem, WishListAdmin)
