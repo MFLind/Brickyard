@@ -147,7 +147,7 @@ So that I can save sets I'm interested in for future consideration or purchase.
 # Differant view on the website.
 From the UX design work I create by hand all the webpages in product (from experience the export functions in Figma isn't perfect, also got information about that from expert UX designer that my employer is using for their products).
 
-The resulting real pages in BrickYard (https://brickyard.herokuapp.com / www.brickyard.se):
+The resulting real pages in BrickYard (https://brickyard.herokuapp.com):
 
 This is the home page. On here you can read litel about what BrickYard are. 
 ![](docs/images/by_1.png)
