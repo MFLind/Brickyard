@@ -15,6 +15,7 @@ def basket_contents(request):
     for item_id, item_data in basket.items():
         if isinstance(item_data, int):
             product = get_object_or_404(Product, pk=item_id)
+            # Calculate total price for product
             total += item_data * product.price
             product_count += item_data
             basket_items.append(
@@ -27,6 +28,7 @@ def basket_contents(request):
         else:
             product = get_object_or_404(Product, pk=item_id)
             for size, quantity in item_data["items_by_size"].items():
+                # Calculate total price for product
                 total += quantity * product.price
                 product_count += quantity
                 basket_items.append(
@@ -37,7 +39,7 @@ def basket_contents(request):
                         "size": size,
                     }
                 )
-
+    """ Check if order has raised over free delivery level """
     if total < settings.FREE_DELIVERY_THRESHOLD:
         delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
         free_delivery_delta = settings.FREE_DELIVERY_THRESHOLD - total

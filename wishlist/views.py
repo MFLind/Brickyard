@@ -12,6 +12,7 @@ logger = logging.getLogger(__name__)
 def list_wishlist(request):
     """A view that wishlist"""
 
+    # User need to be registered and logged in to view users wishlist
     if request.user.is_authenticated:
         try:
             profile = UserProfile.objects.get(user=request.user)
@@ -33,6 +34,7 @@ def list_wishlist(request):
 def add_wish(request, product_id):
     """Add a product to users wishlist"""
 
+    # User need to be registered and logged in to add to users wishlist
     if request.user.is_authenticated:
         try:
             profile = UserProfile.objects.get(user=request.user)
@@ -59,6 +61,7 @@ def add_wish(request, product_id):
 def delete_wish(request, product_id):
     """Delete a product from the wishlist"""
 
+    """ User need to be registered and logged in to delete from users wishlist  """
     if request.user.is_authenticated:
         try:
             profile = UserProfile.objects.get(user=request.user)
