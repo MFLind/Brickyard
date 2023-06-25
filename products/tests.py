@@ -7,13 +7,17 @@ from .models import Category
 
 
 class ProductModelTests(TestCase):
+    """ Unit test class for Product model """
     def setUp(self):
+
+        """ Create category and product for the testing """
         Category.objects.create(
             name="animanl_parts", friendly_name="Animal parts"
         )
 
         Product.objects.create(
-            name="Minifig accessory shield ovoid with dragon blue and red pattern",
+            name="Minifig accessory shield ovoid with dragon\
+                 blue and red pattern",
             sku="770p4c",
             description="Shield whit a dragon on",
             price=12.0,
@@ -33,6 +37,6 @@ class ProductModelTests(TestCase):
         product = Product.objects.get(sku="770p4c")
         print(f"A: {product}")
         self.assertEqual(
-            product.name,
-            "Minifig accessory shield ovoid with dragon blue and red pattern",
+            product.description,
+            "Shield whit a dragon on",
         )

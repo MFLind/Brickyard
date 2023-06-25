@@ -11,13 +11,12 @@ from django.shortcuts import (
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
+from django.core.mail import send_mail
+from django.template.loader import render_to_string
 from products.models import Product
 from profiles.models import UserProfile
 from profiles.forms import UserProfileForm
 from basket.contexts import basket_contents
-from django.core.mail import send_mail
-from django.template.loader import render_to_string
-
 
 from .forms import OrderForm
 from .models import Order, OrderLineItem
@@ -99,7 +98,8 @@ def checkout(request):
                     messages.error(
                         request,
                         (
-                            "One of the products in your basket wasn't found in our database. "
+                            "One of the products in your basket wasn't\
+                                 found in our database. "
                             "Please call us for assistance!"
                         ),
                     )
@@ -133,7 +133,8 @@ def checkout(request):
             currency=settings.STRIPE_CURRENCY,
         )
 
-        # Attempt to prefill the form with any info the user maintains in their profile
+        # Attempt to prefill the form with any info the user
+        # maintains in their profile
         if request.user.is_authenticated:
             try:
                 profile = UserProfile.objects.get(user=request.user)

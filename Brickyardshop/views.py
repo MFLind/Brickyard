@@ -1,10 +1,10 @@
 """ Views for Brickyardshop """
+import logging
 from django.shortcuts import render
-from django.http import HttpResponse, JsonResponse
-from products.models import Category, Product
+from django.http import HttpResponse
 from django.views.decorators.http import require_GET
 
-# Create your views here.
+logger = logging.getLogger(__name__)
 
 
 def index(request):
@@ -29,6 +29,8 @@ def links(request):
 
 def error_404_view(request, exception):
     """404 - page not found view"""
+
+    logger.info("error 404: {}", exception)
     return render(request, "home/404.html")
 
 
@@ -39,11 +41,13 @@ def error_500_view(request):
 
 def error_403_view(request, exception):
     """403 - permission denied view"""
+    logger.info("error 403: {}", exception)
     return render(request, "home/403.html")
 
 
 def error_400_view(request, exception):
     """400 - bad request view"""
+    logger.info("error 400: {}", exception)
     return render(request, "home/400.html")
 
 
@@ -56,12 +60,16 @@ def robots_txt(request):
         "Disallow: /checkout/",
         "Sitemap: https://brickyard.herokuapp.com/sitemap.xml",
     ]
+    logger.info("robot_txt reqest: {}", request)
     return HttpResponse("\n".join(lines), content_type="text/plain")
 
 
 @require_GET
 def sitemap_xml(request):
     """sitemap.xml view"""
-    file1 = open("sitemap.xml", "r")
-    lines = file1.readlines()
+    lines = ""
+    with open("sitemap.xml", "r", encoding='UTF-8') as file1:
+        lines = file1.readlines()
+
+    logger.info("sitemap_xml reqest: {}", request)
     return HttpResponse("\n".join(lines), content_type="text/plain")

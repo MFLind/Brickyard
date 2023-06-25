@@ -2,8 +2,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.db.models import Q
-from django.db.models.functions import Lower
 
 from .models import GuestbookItem
 from .forms import GuestbookForm
@@ -31,7 +29,7 @@ def add_guestbookitem(request):
     if request.method == "POST":
         form = GuestbookForm(request.POST, request.FILES)
         if form.is_valid():
-            guestbookitem = form.save()
+            form.save()
             messages.success(request, "Successfully added Guestbook Item!")
             return redirect(reverse("list_guestbook"))
         messages.error(

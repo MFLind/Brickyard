@@ -1,4 +1,5 @@
 """ Webhooks for stripe """
+import logging
 import stripe
 from django.conf import settings
 from django.http import HttpResponse
@@ -6,6 +7,8 @@ from django.views.decorators.http import require_POST
 from django.views.decorators.csrf import csrf_exempt
 
 from checkout.webhook_handler import StripeWH_Handler
+
+logger = logging.getLogger(__name__)
 
 
 @require_POST
@@ -25,9 +28,11 @@ def webhook(request):
         event = stripe.Webhook.construct_event(payload, sig_header, wh_secret)
     except ValueError as exception:
         # Invalid payload
+        logger.info("webhook Value error: {}", exception)
         return HttpResponse(status=400)
     except stripe.error.SignatureVerificationError as exception:
         # Invalid signature
+        logger.info("webhook SignatureVerificationError error: {}", exception)
         return HttpResponse(status=400)
     except Exception as exception:
         return HttpResponse(content=exception, status=400)
@@ -38,7 +43,8 @@ def webhook(request):
     # Map webhook events to relevant handler functions
     event_map = {
         "payment_intent.succeeded": handler.handle_payment_intent_succeeded,
-        "payment_intent.payment_failed": handler.handle_payment_intent_payment_failed,
+        "payment_intent.payment_failed":
+            handler.handle_payment_intent_payment_failed,
     }
 
     # Get the webhook type from Stripe

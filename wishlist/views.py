@@ -1,9 +1,6 @@
 """ Views for wishlist """
 import logging
-import hashlib
-from django.http import JsonResponse
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from Brickyard import settings
 
 from products.models import Product
 from profiles.models import UserProfile
