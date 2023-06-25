@@ -188,6 +188,8 @@ If user not logged in and view a product details and press "Add to wishlist" the
 
 Gallery for exciting builds and sets, that store image and description for example builds.
 
+Added a guestbook for visitors to add the builds, user need to create a account and login first before adding new item. Administrator of system when logged in can delete items.
+
 
 ## Future improvement
 - Handle product stock and warehousing
