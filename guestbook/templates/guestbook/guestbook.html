@@ -34,9 +34,11 @@
                 <div class="col-md-4">
                     <div class="card mb-4 box-shadow">
                         {% if guestbookitem.image %}
-                        <img class="card-img-top" src="{{ guestbookitem.image.url }}" alt=" image">
+                        <div class="card-img-top align-items-center">
+                            {% cloudinary guestbookitem.image.url height=200 width=200 crop="scale" %}
+                        </div>
                         {% else %}
-                        <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt=" image">
+                        <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="image">
                         {% endif %}
                         <div class="card-body">
                             <p class="card-text font-weight-bold">{{ guestbookitem.name }}</p>
