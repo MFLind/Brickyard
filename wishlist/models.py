@@ -5,7 +5,8 @@ from profiles.models import UserProfile
 
 
 class WishLineItem(models.Model):
-    """ WishLineItem model """
+    """WishLineItem model"""
+
     user_profile = models.ForeignKey(
         UserProfile,
         null=False,

@@ -23,12 +23,12 @@ def list_wishlist(request):
     else:
         return redirect(reverse("account_login"))
 
-    wishlist_product_id_list = WishLineItem.objects.filter(user_profile=profile).values_list("product_id", flat=True)
+    wishlist_product_id_list = WishLineItem.objects.filter(
+        user_profile=profile
+    ).values_list("product_id", flat=True)
     wish_items = Product.objects.filter(id__in=list(wishlist_product_id_list))
 
-    context = {
-        "wishlist_items": wish_items
-    }
+    context = {"wishlist_items": wish_items}
 
     return render(request, "wishlist/wishlist.html", context)
 
@@ -46,7 +46,9 @@ def add_wish(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     try:
-        wishitem = WishLineItem.objects.get(user_profile=profile, product=product)
+        wishitem = WishLineItem.objects.get(
+            user_profile=profile, product=product
+        )
     except WishLineItem.DoesNotExist:
         wishitem = None
 
@@ -70,7 +72,9 @@ def delete_wish(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     try:
-        wishitem = WishLineItem.objects.get(user_profile=profile, product=product)
+        wishitem = WishLineItem.objects.get(
+            user_profile=profile, product=product
+        )
     except WishLineItem.DoesNotExist:
         wishitem = None
 

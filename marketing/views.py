@@ -20,16 +20,14 @@ mailchimp.set_config(
 )
 
 
-def mailchimp_ping_view(
-      request  # pylint: disable=unused-argument
-):
-    """ handling testing mailchimp with ping message """
+def mailchimp_ping_view(request):  # pylint: disable=unused-argument
+    """handling testing mailchimp with ping message"""
     response = mailchimp.ping.get()
     return JsonResponse(response)
 
 
 def subscribe_view(request):
-    """ handle subscribing view """
+    """handle subscribing view"""
     if request.method == "POST":
         form = EmailForm(request.POST)
         if form.is_valid():
@@ -60,7 +58,7 @@ def subscribe_view(request):
 
 
 def subscribe_success_view(request):
-    """ handle subscribe success """
+    """handle subscribe success"""
     return render(
         request,
         "marketing/message.html",
@@ -73,7 +71,7 @@ def subscribe_success_view(request):
 
 
 def subscribe_fail_view(request):
-    """ handle subscribe fail """
+    """handle subscribe fail"""
     return render(
         request,
         "marketing/message.html",
@@ -85,7 +83,7 @@ def subscribe_fail_view(request):
 
 
 def unsubscribe_view(request):
-    """ handle unsubscribing view """
+    """handle unsubscribing view"""
     if request.method == "POST":
         form = EmailForm(request.POST)
         if form.is_valid():
@@ -119,7 +117,7 @@ def unsubscribe_view(request):
 
 
 def unsubscribe_success_view(request):
-    """ handle subscribe success """
+    """handle subscribe success"""
     return render(
         request,
         "marketing/message.html",
@@ -132,7 +130,7 @@ def unsubscribe_success_view(request):
 
 
 def unsubscribe_fail_view(request):
-    """ handle subscribe fail """
+    """handle subscribe fail"""
     return render(
         request,
         "marketing/message.html",

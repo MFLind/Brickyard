@@ -5,9 +5,11 @@ from .models import GalleryItem
 
 
 class GalleryForm(forms.ModelForm):
-    """ Gallery form """
+    """Gallery form"""
+
     class Meta:
-        """ Meta class for GalleryForm """
+        """Meta class for GalleryForm"""
+
         model = GalleryItem
         fields = ["name", "description", "image"]
 
@@ -16,7 +18,7 @@ class GalleryForm(forms.ModelForm):
     )
 
     def __init__(self, *args, **kwargs):
-        """ Constructor for gallery form """
+        """Constructor for gallery form"""
         super().__init__(*args, **kwargs)
 
         for field_name, field in self.fields.items():

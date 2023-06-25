@@ -218,7 +218,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 DJANGO_CLOUD_SS = "cloudinary_storage.storage"
 
-STATIC_URL = '/static/'
+STATIC_URL = "/static/"
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 STATICFILES_STORAGE = f"{DJANGO_CLOUD_SS}.StaticHashedCloudinaryStorage"
 

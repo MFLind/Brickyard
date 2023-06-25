@@ -23,8 +23,14 @@ class Migration(migrations.Migration):
                 ),
                 ("name", models.CharField(max_length=254)),
                 ("description", models.TextField()),
-                ("image_url", models.URLField(blank=True, max_length=1024, null=True)),
-                ("image", models.ImageField(blank=True, null=True, upload_to="")),
+                (
+                    "image_url",
+                    models.URLField(blank=True, max_length=1024, null=True),
+                ),
+                (
+                    "image",
+                    models.ImageField(blank=True, null=True, upload_to=""),
+                ),
             ],
         ),
     ]

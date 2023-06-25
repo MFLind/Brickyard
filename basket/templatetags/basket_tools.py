@@ -7,5 +7,5 @@ register = template.Library()
 
 @register.filter(name="calc_subtotal")
 def calc_subtotal(price, quantity):
-    """ Calculate sub total """
+    """Calculate sub total"""
     return price * quantity

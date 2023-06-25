@@ -8,7 +8,9 @@ from .models import Category
 
 class ProductModelTests(TestCase):
     def setUp(self):
-        Category.objects.create(name="animanl_parts", friendly_name="Animal parts")
+        Category.objects.create(
+            name="animanl_parts", friendly_name="Animal parts"
+        )
 
         Product.objects.create(
             name="Minifig accessory shield ovoid with dragon blue and red pattern",

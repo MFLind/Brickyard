@@ -3,25 +3,28 @@ from django.db import models
 
 
 class Category(models.Model):
-    """ Category model """
+    """Category model"""
+
     class Meta:
-        """ Meta class """
+        """Meta class"""
+
         verbose_name_plural = "Categories"
 
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
     def __str__(self):
-        """ string return of name """
+        """string return of name"""
         return str(self.name)
 
     def get_friendly_name(self):
-        """ Return friendly name """
+        """Return friendly name"""
         return self.friendly_name
 
 
 class Product(models.Model):
-    """ Product model """
+    """Product model"""
+
     category = models.ForeignKey(
         "Category", null=True, blank=True, on_delete=models.SET_NULL
     )
@@ -34,5 +37,5 @@ class Product(models.Model):
     image = models.ImageField(null=True, blank=True)
 
     def __str__(self):
-        """ string return of name """
+        """string return of name"""
         return str(self.name)

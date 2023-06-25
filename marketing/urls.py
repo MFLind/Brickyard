@@ -14,5 +14,9 @@ urlpatterns = [
         views.unsubscribe_success_view,
         name="unsubscribe-success",
     ),
-    path("unsubscribe/fail/", views.unsubscribe_fail_view, name="unsubscribe-fail"),
+    path(
+        "unsubscribe/fail/",
+        views.unsubscribe_fail_view,
+        name="unsubscribe-fail",
+    ),
 ]

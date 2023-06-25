@@ -4,7 +4,8 @@ from .models import GuestbookItem
 
 
 class GuestbookAdmin(admin.ModelAdmin):
-    """ Guestbook Admin Model """
+    """Guestbook Admin Model"""
+
     list_display = (
         "name",
         "image",

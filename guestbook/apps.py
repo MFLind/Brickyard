@@ -3,5 +3,6 @@ from django.apps import AppConfig
 
 
 class GuestbookConfig(AppConfig):
-    """ Guestbook Config class """
+    """Guestbook Config class"""
+
     name = "guestbook"

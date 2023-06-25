@@ -3,5 +3,6 @@ from django.apps import AppConfig
 
 
 class ProductsConfig(AppConfig):
-    """ Config class """
+    """Config class"""
+
     name = "products"

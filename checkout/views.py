@@ -1,7 +1,13 @@
 """ Views for checkout """
 import json
 import stripe
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import (
+    render,
+    redirect,
+    reverse,
+    get_object_or_404,
+    HttpResponse,
+)
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -17,10 +23,9 @@ from .forms import OrderForm
 from .models import Order, OrderLineItem
 
 
-
 @require_POST
 def cache_checkout_data(request):
-    """ cache checkout data request """
+    """cache checkout data request"""
     try:
         pid = request.POST.get("client_secret").split("_secret")[0]
         stripe.api_key = settings.STRIPE_SECRET_KEY
@@ -43,7 +48,7 @@ def cache_checkout_data(request):
 
 
 def checkout(request):
-    """ Checkout request """
+    """Checkout request"""
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
@@ -80,7 +85,9 @@ def checkout(request):
                         )
                         order_line_item.save()
                     else:
-                        for size, quantity in item_data["items_by_size"].items():
+                        for size, quantity in item_data[
+                            "items_by_size"
+                        ].items():
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
@@ -101,7 +108,9 @@ def checkout(request):
 
             # Save the info to the user's profile if all is well
             request.session["save_info"] = "save-info" in request.POST
-            return redirect(reverse("checkout_success", args=[order.order_number]))
+            return redirect(
+                reverse("checkout_success", args=[order.order_number])
+            )
         messages.error(
             request,
             "There was an error with your form. \
@@ -110,7 +119,9 @@ def checkout(request):
     else:
         basket = request.session.get("basket", {})
         if not basket:
-            messages.error(request, "There's nothing in your basket at the moment")
+            messages.error(
+                request, "There's nothing in your basket at the moment"
+            )
             return redirect(reverse("products"))
 
         current_basket = basket_contents(request)
@@ -191,8 +202,8 @@ def checkout_success(request, order_number):
 
     cust_email = order.email
     subject = render_to_string(
-            "checkout/confirmation_emails/confirmation_email_subject.txt",
-            {"order": order},
+        "checkout/confirmation_emails/confirmation_email_subject.txt",
+        {"order": order},
     )
     body = render_to_string(
         "checkout/confirmation_emails/confirmation_email_body.txt",

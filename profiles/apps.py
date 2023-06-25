@@ -3,5 +3,6 @@ from django.apps import AppConfig
 
 
 class ProfilesConfig(AppConfig):
-    """ Config for Profiles """
+    """Config for Profiles"""
+
     name = "profiles"

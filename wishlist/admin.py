@@ -4,7 +4,8 @@ from .models import WishLineItem
 
 
 class WishListAdmin(admin.ModelAdmin):
-    """ Wishlist Admin Model """
+    """Wishlist Admin Model"""
+
     list_display = (
         "user_profile",
         "product",

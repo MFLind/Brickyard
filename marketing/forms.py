@@ -3,5 +3,6 @@ from django import forms
 
 
 class EmailForm(forms.Form):
-    """ Email form """
+    """Email form"""
+
     email = forms.EmailField(label="Email", max_length=128)

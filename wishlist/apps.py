@@ -3,5 +3,6 @@ from django.apps import AppConfig
 
 
 class WishlistConfig(AppConfig):
-    """ Wishlist Config class """
+    """Wishlist Config class"""
+
     name = "wishlist"

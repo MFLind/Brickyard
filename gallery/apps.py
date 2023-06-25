@@ -3,5 +3,6 @@ from django.apps import AppConfig
 
 
 class GalleryConfig(AppConfig):
-    """ Gallery Config class """
+    """Gallery Config class"""
+
     name = "gallery"

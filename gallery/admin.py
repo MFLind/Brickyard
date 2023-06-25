@@ -4,7 +4,8 @@ from .models import GalleryItem
 
 
 class GalleryAdmin(admin.ModelAdmin):
-    """ Product Admin Model """
+    """Product Admin Model"""
+
     list_display = (
         "name",
         "image",

@@ -21,34 +21,35 @@ def aboutus(request):
     """A view to return the aboutus page"""
     return render(request, "home/aboutus.html")
 
+
 def links(request):
     """A view to return the links to friends page"""
     return render(request, "home/links.html")
 
 
 def error_404_view(request, exception):
-    """ 404 - page not found view """
+    """404 - page not found view"""
     return render(request, "home/404.html")
 
 
 def error_500_view(request):
-    """ 500 - error view """
+    """500 - error view"""
     return render(request, "home/500.html")
 
 
 def error_403_view(request, exception):
-    """ 403 - permission denied view """
+    """403 - permission denied view"""
     return render(request, "home/403.html")
 
 
 def error_400_view(request, exception):
-    """ 400 - bad request view """
+    """400 - bad request view"""
     return render(request, "home/400.html")
 
 
 @require_GET
 def robots_txt(request):
-    """ robots.txt view """
+    """robots.txt view"""
     lines = [
         "User-Agent: *",
         "Disallow: /accounts/",
@@ -60,7 +61,7 @@ def robots_txt(request):
 
 @require_GET
 def sitemap_xml(request):
-    """ sitemap.xml view """
+    """sitemap.xml view"""
     file1 = open("sitemap.xml", "r")
     lines = file1.readlines()
     return HttpResponse("\n".join(lines), content_type="text/plain")
