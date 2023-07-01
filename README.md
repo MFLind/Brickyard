@@ -210,7 +210,7 @@ Datamodel is implemented with Django framework and custom database has been adde
 ![](docs/images/datamodel.png)
   
  # Social media
-  I have created Pintrest (@brickyard_lego_store) and Instagram (@brickyard_lego_store) account for BrickYard, these social networks are the primary channel for BrickYards customers.
+  I have created Pinterest (@brickyard0225) and Instagram (@brickyard_lego_store) account for BrickYard, these social networks are the primary channel for BrickYards customers.
   
   But I have made a mockup Facebook for Business page as below:
   
